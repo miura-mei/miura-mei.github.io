@@ -183,7 +183,7 @@ main .fv::after {
   left: 0;
   width: 100vw;
   height: 120px;
-  background-image: url('../images/../images/fv_02.jpg');
+  background-image: url('../images/../images/fv_02.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -238,6 +238,7 @@ main .fv .name {
 main .about {
   position: relative;
   width: 100%;
+  padding-top: 10%;
 }
 
 main .about .profile {
