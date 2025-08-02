@@ -170,10 +170,25 @@ main .fv {
   width: 100%;
   height: 100vh;
   z-index: 100;
-  background-image: url(../images/fv2.png);
+  background-image: url(../images/fv_03.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 2%;
+}
+
+main .fv::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  width: 100vw;
+  height: 120px;
+  background-image: url('../images/../images/fv_02.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+  pointer-events: none;
 }
 
 main .fv .photo_fv {
