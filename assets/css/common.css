@@ -97,7 +97,6 @@ main{
   opacity: 1;
   /* 表示させる */
   transform: translate(0, 0);
-  /* 位置を最初の位置に戻す */
 }
 
 .animation-right {
