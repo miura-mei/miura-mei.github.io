@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/* 診療案内ページCSS */
+
+
+/* 背景色 */
+main .cover_bg {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: url(../images/common/wave_05.png) left bottom no-repeat, #d8f0fb;
+  background-size: 100%;
+}
+
+
+/* 文字装飾 */
+/* 1.タイトル「診療案内」 */
+main h2 {
+  width: 204px;
+  height: 71px;
+  line-height: 71px;
+  margin: 200px auto 80px;
+  text-align: center;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: #fff;
+  background-image: url(../images/guidance/bubble_bl.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* 2.小見出しh4「各診療メニュー名」 */
+main h4 {
+  color: #4ba9e2;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main h4:before {
+  content: url(../images/guidance/icon_shio.png);
+}
+
+
+/* float */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* js */
+.fadeIn {
+  opacity: 0;
+  transition: 2s;
+}
+.fadeIn.is-show {
+  opacity: 1;
+}
+
+
+
+/* ↓ここから「診療内容」の各要素 */
+
+/* メイン */
+main{
+  overflow: hidden;
+}
+
+/* ↓ここから「一般診療」 */
+main .general {
+  width: 1260px;
+  height: 283px;
+  background-image: url(../images/guidance/back_maru_S.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 120px;
+}
+
+main .general h3 {
+  position: relative;
+  top: 10px;
+  right: 50px;
+}
+
+main .general_content h4 {
+  position: relative;
+  top: 40px;
+  left: 550px;
+}
+
+main .general_content p {
+  position: relative;
+  top: 80px;
+  left: 90px;
+  text-align: center;
+}
+
+/* ↑ここまで「一般診療」 */
+
+
+/* ↓ここから「予防接種」 */
+main .vaccine {
+  width: 1260px;
+  height: 400px;
+  background-image: url(../images/guidance/back_maru_S.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 20px;
+}
+
+main .vaccine h3 {
+  position: relative;
+  top: 0px;
+  left: 30px;
+}
+
+main .vaccine_content h4 {
+  position: relative;
+  top: 90px;
+  left: 230px;
+}
+
+main .vaccine_content p {
+  position: relative;
+  top: 115px;
+  left: -145px;
+  text-align: center;
+}
+
+/* ↑ここまで「予防接種」 */
+
+
+/* ↓ここから「乳幼児健診」 */
+main .checkup {
+  width: 1260px;
+  height: 690px;
+  background-image: url(../images/guidance/back_maru_L.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 80px;
+}
+
+main .checkup h3 {
+  position: relative;
+  top: 30px;
+  right: 10px;
+}
+
+main .checkup .checkup_items_bg {
+  width: 367px;
+  height: 384px;
+  background-image: url(../images/guidance/mochimono_kujira.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 80px;
+  right: 20px;
+}
+
+main .checkup .checkup_items {
+  position: relative;
+  top: 140px;
+  left: 100px;
+}
+
+main .checkup_content h4 {
+  position: relative;
+  top: 150px;
+  left: 520px;
+}
+
+main .checkup_content p {
+  position: relative;
+  top: 160px;
+  left: 100px;
+  text-align: center;
+}
+
+/* ↑ここまで「乳幼児健診」 */
+
+
+/* ↓ここから「アレルギー」 */
+main .allergy {
+  width: 1260px;
+  height: 452px;
+  background-image: url(../images/guidance/back_maru_M.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 180px;
+}
+
+main .allergy h3 {
+  position: relative;
+  top: 70px;
+  left: 20px;
+}
+
+main .allergy_content h4 {
+  position: relative;
+  top: 50px;
+  left: 200px;
+}
+
+main .allergy_content_text {
+  position: relative;
+  top: 90px;
+  right: 90px;
+  text-align: center;
+}
+
+
+main .allergy_content_text ul {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main .allergy_content_text ul .maru_orange {
+  width: 125px;
+  height: 125px;
+  line-height: 125px;
+  margin: auto;
+  background-image: url(../images/guidance/maru_orange.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .allergy_content_text ul .maru_blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  background-image: url(../images/guidance/maru_blue.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* ↑ここまで「アレルギー」 */
+
+
+
+/* ---------------------------------------- */
+
+/* sp */
+
+@media screen and (max-width:640px) {
+
+  /* SP版の表示設定 */
+
+  main h2 {
+    margin: 80px auto 40px;
+  }
+
+  main .sp_section_bg {
+    width: auto;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  main .sp_section_bg img {
+    width: 70%;
+  }
+
+  main .sp_section_bg p {
+    text-align: left;
+    padding: 20px 10px 0px 10px;
+  }
+
+  main .sp_section_bg .allergy_list{
+    text-align: left;
+    padding-left: 20px;
+  }
+
+
+}

@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/* ごあいさつページCSS */
+
+
+
+/* 背景色 */
+main .cover_bg {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: url(../images/common/wave_05.png) left bottom no-repeat, #c1e7f9;
+  background-size: 100%;
+}
+
+/* タイトル「ごあいさつ」 */
+main h2 {
+  width: 203px;
+  height: 84px;
+  line-height: 84px;
+  margin: 200px auto 80px;
+  background-image: url(../images/common/bubble_m_w.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+/* ↓ここから「ごあいさつ」の各要素 */
+
+/* main */
+main{
+  overflow: hidden;
+}
+
+/* 背景 */
+main {
+  background-color: #c1e7f9;
+  background-image: url(../images/common/bg_illust.png);
+  /* コンテンツ幅 */
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.cover_bg::before {
+  content: none;
+}
+
+main .cover_bg {
+  padding: initial;
+  background: none;
+  position: static;
+}
+
+main .cover_bg {
+  padding-top: 60px;
+}
+
+/* .box */
+main .box {
+  background-color: #FFF;
+  border-radius: 50px;
+  padding: 4% 5.6%;
+}
+
+
+/* ごあいさつ */
+
+main .greeting .doctor_photo {
+  margin-top: 15px;
+}
+
+main .greeting .g_content {
+  margin-bottom: 50px;
+}
+
+main .box .content {
+  margin-bottom: 1em;
+}
+
+main .greeting .box .hello {
+  font-size: 24px;
+  margin-bottom: 0.7em;
+}
+
+main .greeting .box .hello span {
+  background: linear-gradient(transparent 60%, #c1e7f9 60%);
+}
+
+main .greeting .box .doctor_name span {
+  font-size: 24px;
+  background: linear-gradient(transparent 60%, #c1e7f9 60%);
+}
+
+main .greeting .box .doctor_name {
+  font-size: 18px;
+  margin-bottom: 1.5em;
+}
+
+/* くじら */
+main .greeting {
+  position: relative;
+}
+
+main .whale {
+  position: absolute;
+  top: 110px;
+  right: 40px;
+}
+
+
+/* 院長略歴 */
+
+main .box h3 {
+  color: #29abe2;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+main .greeting .box .society {
+  margin-right: 175px;
+}
+
+main .doctor_photo {
+  margin-right: 40px;
+}
+
+/* h3 アイコン */
+main .box h3::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/common/icon_shio.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-right: 5px;
+}
+
+/* サメと魚群 */
+main .greeting .shark {
+  position: absolute;
+  bottom: -240px;
+  left: -15px;
+}
+
+main .greeting .fish {
+  position: absolute;
+  bottom: -125px;
+  right: -5px;
+}
+
+/* js */
+.fadeIn {
+  opacity: 0;
+  transition: 2s;
+}
+.fadeIn.is-show {
+  opacity: 1;
+}
+
+.fadeIn_right {
+  opacity: 0;
+  transform: translate(50%, 0);
+  transition: 2s;
+}
+.fadeIn_right.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fadeIn_left {
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: 2s;
+}
+.fadeIn_left.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
+
+/* ------------------ */
+
+/* スタッフ紹介 */
+
+main .staff .staff_photo_sp{
+  display: none;
+}
+
+main .staff {
+  padding-bottom: 170px;
+}
+
+main .staff .box .staff_name {
+  display: inline-block;
+  font-size: 20px;
+  background: linear-gradient(transparent 60%, #c1e7f9 60%);
+  margin-bottom: 1em;
+}
+
+main .staff .box .staff_name span {
+  font-size: 24px;
+  padding-left: 25px;
+}
+
+main .staff .staff_photo {
+  margin-left: 40px;
+}
+
+/* ---------------------------------------- */
+
+/* sp */
+@media screen and (max-width:640px){
+/*----リセット----*/
+main h2 {
+  margin: 0;
+}
+
+main .greeting .doctor_photo {
+  margin: 0;
+}
+
+main .greeting .box .society{
+  margin: 0;
+}
+
+main .whale, .shark, .fish{
+  display: none;
+}
+
+main .staff .staff_photo{
+ display: none;
+}
+
+/*-----*/
+main h2 {
+  margin: 80px auto 30px
+}
+main .greeting .doctor_photo {
+  margin-bottom: 30px;
+}
+main .greeting .bio_list{
+  margin-bottom: 1em;
+}
+
+main .staff{
+  padding-bottom: 80px;
+}
+
+main .staff .staff_photo_sp{
+  display: block;
+  margin-bottom: 30px;
+}
+
+}

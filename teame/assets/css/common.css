@@ -1,0 +1,939 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+
+body h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,figure {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  font-family: 'M PLUS 1p', sans-serif;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: #313131;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  letter-spacing: 0.25em;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+.ds_f {
+  display: flex;
+}
+
+.jc_sb {
+  justify-content: space-between;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrap {
+  width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+
+/* ------↑ここまで共通部分--------- */
+
+/*  ヘッダー */
+
+header {
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 999;
+  width: 1260px;
+  box-sizing: border-box;
+}
+
+header .logo {
+  margin-top: 20px;
+  margin-right: 150px;
+}
+
+header .h_content {
+  padding: 0 50px 10px;
+}
+
+header .g_nav {
+  width: 100%;
+}
+
+header .g_nav ul {
+  margin-top: 30px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+header .g_nav ul li {
+  text-align: center;
+}
+
+header .g_nav ul li a {
+  display: inline-block;
+}
+
+header .g_nav ul li .g_nav_list {
+  margin-top: 10px;
+  color: #313131;
+}
+
+/* ヘッダー下の白い波 */
+
+header::after {
+  content: "";
+  /* content: url(../images/common/wave_06.png); */
+  display: inline-block;
+  background-image: url(../images/common/wave_06.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------------------- */
+
+/* 白い模様の背景 */
+
+main .cover_bg {  
+  position: relative;
+}
+
+.cover_bg::before {
+  content: "";
+  display: inline-block;
+  /* グラデーションあり */
+  /* background:linear-gradient(rgba(150,215,246,1),rgba(173,224,248,0.3),rgba(216,240,251,0)),url(../images/common/main_bg_white.png); */
+  /* グラデーションなし */
+  background:url(../images/common/bg_illust.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------------------- */
+
+/* メインビジュアル */
+main .main_visual {
+  padding-top: 130px;
+  width: 1260px;
+  position: relative;
+  height: 842px;
+  background-color: #96d7f6;
+}
+
+/* スライド */
+
+#slide li {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+#button ul li a {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  display: block;
+}
+/* ---------------- */
+
+main .main_visual .flame {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+main .main_visual .flame img {
+  width: 100%;
+}
+
+/* ---------------------------------------- */
+
+/* 予約ボタン */
+
+main .to_reserve_btn {
+  position: fixed;
+  z-index: 1500;
+  top: 130px;
+  right: calc((100vw - 1260px) / 2);
+  width: 186px;
+  height: 185px;
+  background-image: url(../images/common/btn_shell.png);
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
+
+.to_reserve_btn ul li:first-child {
+  width: 110px;
+  height: 55px;
+  background-image: url(../images/common/btn_yoyaku.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+
+.to_reserve_btn ul li:first-child a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #313131;
+}
+
+.to_reserve_btn ul li:last-child {
+  background-image: url(../images/common/icon_tel_s_or.png);
+  background-repeat: no-repeat;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-bottom: 1px solid #f8904b;
+  padding-left: 8px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.to_reserve_btn ul li:last-child a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: #f8904b;
+  padding-left: 16px;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+/* ---------------------------------------- */
+
+/* お知らせ */
+
+main .news {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background:url(../images/common/wave_02.png) left bottom no-repeat,#96d7f6;
+  background-size: 100%;
+}
+
+main .news h2 {
+  width: 203px;
+  height: 84px;
+  line-height: 84px;
+  margin: 0px auto 50px;
+  background-image: url(../images/common/bubble_m_w.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .news .news_bg {
+  width: 800px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 75px 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+main .news_bg dl {
+  line-height: 3;
+}
+
+main .news_bg dl dt {
+  float: left;
+  clear: left;
+  width: 140px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 16px;
+}
+
+main .news_bg dl dd {
+  margin-left: 140px;
+  font-size: 18px;
+}
+
+main .news_bg dl dd a {
+  color: #313131;
+}
+
+main .news_bg dl .news_topic {
+  border-bottom: 1px solid #00a0e9;
+  vertical-align: middle;
+}
+
+main .news_bg .to_news {
+  width: 133px;
+  height: 46px;
+  line-height: 46px;
+  margin: 30px 25px 0 auto;
+  text-align: center;
+  background-image: url(../images/common/bubble_s_bl.png);
+  background-repeat: no-repeat;
+}
+
+main .news_bg .to_news a {
+  color: #fff;
+}
+
+/* ---------------------------------------- */
+
+/* 診療案内 */
+
+main .menu {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background: url(../images/common/wave_03.png) left bottom no-repeat, #ade0f8;
+  background-size: 100%;
+}
+
+main .menu h2 {
+  width: 203px;
+  height: 84px;
+  line-height: 84px;
+  margin: 0px auto 50px;
+  background-image: url(../images/common/bubble_m_w.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .menu .card {
+  justify-content: space-around;
+}
+
+main .menu .card li a {
+  display: block;
+  position: relative;
+  color: #313131;
+  font-size: 20px;
+}
+
+main .menu .card .card_img1 {
+  width: 290px;
+  height: 264px;
+  background-image: url(../images/top/img_ippan.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .menu .card .card_img1 a{
+  padding-top: 205px;
+  padding-left: 110px;
+}
+
+main .menu .card .card_img1 a:hover {
+  background-image: url(../images/top/img_ippan_h.png);
+  background-repeat: no-repeat;
+}
+
+main .menu .card .card_img2 {
+  width: 277px;
+  height: 255px;
+  background-image: url(../images/top/img_yobo.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .menu .card .card_img2 a {
+  padding-top: 205px;
+  padding-left: 115px;
+}
+
+main .menu .card .card_img2:hover {
+  background-image: url(../images/top/img_yobo_h.png);
+  background-repeat: no-repeat;
+}
+
+main .menu .card .card_img3 {
+  width: 290px;
+  height: 264px;
+  background-image: url(../images/top/img_kenshin.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .menu .card .card_img3 a {
+  padding-top: 205px;
+  padding-left: 105px;
+}
+
+main .menu .card .card_img3:hover {
+  background-image: url(../images/top/img_kenshin_h.png);
+  background-repeat: no-repeat;
+}
+
+main .menu .card .card_img4 {
+  width: 279px;
+  height: 259px;
+  background-image: url(../images/top/img_allergy.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .menu .card .card_img4 a {
+  padding-top: 205px;
+  padding-left: 105px;
+}
+
+main .menu .card .card_img4:hover {
+  background-image: url(../images/top/img_allergy_h.png);
+  background-repeat: no-repeat;
+}
+
+/* ---------------------------------------- */
+
+/* 診療スケジュール */
+
+main .schedule {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background: url(../images/common/wave_04.png) left bottom no-repeat, #c1e7f9;
+  background-size: 100%;
+}
+
+main .schedule h2 {
+  width: 355px;
+  height: 84px;
+  line-height: 84px;
+  margin: 0 auto 50px;
+  background-image: url(../images/common/bubble_l_w.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .schedule_bg {
+  width: 725px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  position: relative;
+}
+
+main .schedule_list {
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .schedule_list th,
+td {
+  border-top: 3px solid #00a0e9;
+  border-left: 3px solid #00a0e9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .schedule_list th:first-child {
+  border-left: none;
+  width: 30%;
+}
+
+main .schedule_list tr:first-child th,
+tr:first-child td {
+  border-top: none;
+}
+
+main .schedule_list td {
+  color: #7ecef4;
+}
+
+main .schedule_list .dash {
+  color: #313131;
+  font-weight: 600;
+}
+
+/* ---------------------------------------- */
+
+/* アクセス */
+
+main .access {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background: #d8f0fb;
+  background-size: 100%;
+}
+
+main .access h2 {
+  width: 232px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0px auto 50px;
+  background-image: url(../images/common/bubble_m_bl.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+main .access .access_bg {
+  width: 800px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  padding: 75px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 16px;
+}
+
+main .access_content .access_address {
+  margin-top: 15px;
+  /* font-weight: 500; */
+}
+
+main .access_content .access_info {
+  margin-top: 30px;
+  /* font-weight: 500; */
+}
+
+main .access_content .to_access {
+  width: 133px;
+  height: 46px;
+  line-height: 46px;
+  margin-top: 115px;
+  margin-left: 180px;
+  text-align: center;
+  background-image: url(../images/common/bubble_s_bl.png);
+  background-repeat: no-repeat;
+}
+
+main .access_content .to_access a {
+  color: #fff;
+}
+
+/* ---------------------------------------- */
+
+/* トップへ戻る */
+
+footer .to_top_btn {
+  width: 124px;
+  height: 151px;
+  background-image: url(../images/common/turtle.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 55px;
+  position: absolute;
+  bottom: 250px;
+  left: 1086px;
+  box-sizing: border-box;
+}
+
+footer .to_top_btn a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ---------------------------------------- */
+
+/* フッター */
+
+footer {
+  background-color: #fff;
+  position: relative;
+  transform: rotate(0.05deg);
+}
+
+footer::before {
+  content: "";
+  display: inline-block;
+  background: url(../images/common/wave_07.png) left bottom no-repeat;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer a {
+  color: #00a0e9;
+  font-size: 16px;
+}
+
+footer .f_content {
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+footer .f_nav {
+  width: 100%;
+  align-items: center;
+}
+
+footer .f_nav .home {
+  text-align: center;
+}
+
+footer .f_nav .home .f_nav_list {
+  margin-top: 15px;
+}
+
+footer .f_nav ul {
+  width: 100%;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .copy {
+  text-align: center;
+  color: #00a0e9;
+}
+
+/* ---------------------------------------- */
+
+/* sp */
+
+@media screen and (max-width:640px){
+
+  #wrap {
+    width: auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .g_nav, .f_nav {
+    display: none;
+  }
+
+  .ds_f {
+    flex-direction: column;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  /* ヘッダー */
+
+  header {
+    width: 100vw;
+  }
+
+  header .h_content {
+    padding: 0;
+  }
+
+  header .logo {
+    width: 20%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  /* ハンバーガーボタン */
+
+  header .h_btn {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    width: 10%;
+  }
+
+  header .sp_nav ul{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+    position: absolute;
+    z-index: 9999;
+    background-image: url(../images/common/logo_footer.png);
+    background-repeat: no-repeat;
+    background-position: bottom 5% right 10%;
+    background-size: 50%;
+    padding: 10px 20px 30px;
+    box-sizing: border-box;
+  }
+
+  header .sp_nav ul li {
+    line-height: 80px;
+    padding-top: 0;
+    text-align: center;
+    border-bottom: 2px solid #00a0e9;
+  }
+
+  header .sp_nav ul li a {
+    color: #00a0e9;
+    font-size: 20px;
+  }
+
+  /* ---------------------------- */
+
+  /* メインビジュアル */
+
+  main .main_visual_sp img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+  }
+
+  /* ---------------------------- */
+
+  /* 予約ボタン */
+
+  main .to_reserve_btn {
+    top: 80px;
+    right: 0;
+    width: 120px;
+    height: 119px;
+    background-image: url(../images/common/btn_shell_S.png);
+    background-repeat: no-repeat;
+    padding-top: 40px;
+  }
+
+  .to_reserve_btn ul li:first-child {
+    background-image: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---------------------------- */
+
+  /* お知らせ */
+
+  main .news {
+    padding-bottom: 80px;
+  }
+
+  main .news h2 {
+    width: auto;
+    height: auto;
+    background-size: 40%;
+    background-position: center;
+    font-size: 20px;
+  }
+
+  main .news .news_bg {
+    width: auto;
+    padding: 30px;
+    margin: 0 25px;
+  }
+
+  main .news_bg dl {
+    line-height: 1.5;
+  }
+
+  main .news .news_bg dl dt {
+    float: none;
+    width: auto;
+   }
+
+  main .news .news_bg dl dd {
+    margin: 0;
+    font-size: 16px;
+   }
+
+  main .news_bg .to_news {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .news_bg .to_news a {
+    font-size: 15px;
+  }
+
+  /* ---------------------------- */
+
+  /* 診療案内 */
+
+  main .menu {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  main .menu h2 {
+    width: auto;
+    height: auto;
+    background-size: 40%;
+    background-position: center;
+    font-size: 20px;
+  }
+
+  main .menu .card li {
+    margin: 0 auto 40px;
+   }
+
+   main .menu .card li a {
+    font-size: 18px;
+   }
+
+   main .menu .card li:last-child {
+    margin-bottom: 0;
+   }
+
+   main .menu .card .card_img1 a:hover {
+    background-image: url(../images/top/img_ippan.png);
+    background-repeat: no-repeat;
+  }
+
+  main .menu .card .card_img2:hover {
+    background-image: url(../images/top/img_yobo.png);
+    background-repeat: no-repeat;
+  }
+
+  main .menu .card .card_img3:hover {
+    background-image: url(../images/top/img_kenshin.png);
+    background-repeat: no-repeat;
+  }
+
+  main .menu .card .card_img4:hover {
+    background-image: url(../images/top/img_allergy.png);
+    background-repeat: no-repeat;
+  }
+
+  /* ---------------------------- */
+
+  /* 診察スケジュール */
+
+  main .schedule {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  main .schedule h2 {
+    width: auto;
+    height: auto;
+    background-size: 65%;
+    background-position: center;
+    font-size: 20px;
+  }
+
+  main .schedule_bg {
+    width: auto;
+    margin: 0 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+
+   main .schedule_list th:first-child {
+    width: 40%;
+   }
+
+   main .schedule_list th {
+    font-size: 14px;
+    font-weight: normal;
+   }
+
+   main .schedule_list th, td {
+    padding: 0;
+    border-top: 1px solid #00a0e9;
+    border-left: 1px solid #00a0e9;
+   }
+
+  /* ---------------------------- */
+
+  /* アクセス */
+
+  main .access {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  main .access h2 {
+    width: auto;
+    height: auto;
+    background-size: 40%;
+    background-position: center;
+    font-size: 20px;
+  }
+
+  main .access .access_bg {
+    width: auto;
+    margin: 0 25px;
+    padding: 30px 10px;
+   }
+
+  main .access .access_bg .access_content {
+    font-size: 14px;
+  }
+
+  main .access .access_bg .map img {
+    width: 80%;
+  }
+
+  main .access_content .to_access {
+    margin: 50px auto 0;
+   }
+
+  main .access_content .to_access a {
+    font-size: 15px;
+  }
+   
+  /* ---------------------------- */
+
+  /* トップへ戻る */
+
+  main .to_top_btn {
+    display: none;
+   }
+
+  /* ---------------------------- */
+
+  /* フッター */
+
+   footer .f_logo {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+  /* ---------------------------- */
+
+}

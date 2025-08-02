@@ -1,0 +1,534 @@
+@charset "UTF-8";
+
+/* 予約ページCSS */
+
+
+/* 背景色 */
+main .cover_bg {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: url(../images/common/wave_05.png) left bottom no-repeat, #d8f0fb;
+  background-size: 100%;
+}
+
+
+/* タイトル「予約」 */
+main h2 {
+  width: 203px;
+  height: 84px;
+  line-height: 84px;
+  margin: 0px auto 50px;
+  margin-top: 200px;
+  text-align: center;
+  background-image: url(../images/reservation/bubble_bl_h2.png);
+  background-repeat: no-repeat;
+  font-family: 'Yusei Magic', sans-serif;
+  letter-spacing: 0.25em;
+  font-weight: 500;
+  position: relative;
+}
+
+
+/* ↓ここから「予約」の各要素 */
+
+/* 背景 */
+main {
+  background-color: #d8f0fb;
+  background-image: url(../images/common/bg_illust.png);
+  /* コンテンツ幅 */
+  padding-left: 6.3%;
+  padding-right: 6.3%;
+}
+
+.cover_bg::before {
+  content: none;
+}
+
+main .cover_bg {
+  padding: initial;
+  background: none;
+  position: static;
+}
+
+main .cover_bg {
+  padding-top: 60px;
+}
+
+/* 全要素中央揃え */
+main .ta_c {
+  text-align: center;
+}
+
+/* 予約タイトル～ */
+main h2 {
+  background-position: center;
+  color: #fff;
+}
+
+main .reservation_content {
+  margin-bottom: 25px;
+}
+
+main .reservation_content span {
+  color: #ea5151;
+}
+
+/*----------------------*/
+
+/* 電話予約 */
+main .tel {
+  height: 426px;
+  width: auto;
+  margin-top: 90px;
+  background-image: url(../images/reservation/telyoyaku_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 25px 6%;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+/* h3 アイコン */
+main .tel h3::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/common/icon_shio_w.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+main .tel h3,
+main .consul_h h3 {
+  background-image: url(../images/reservation/bubble_bl_s.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 53px;
+  line-height: 53px;
+  width: auto;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/*----*/
+main .tel .tel_num a {
+  font-size: 36px;
+  font-weight: 500;
+  color: #313131;
+}
+
+main .tel .receptionTime {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* 水色の背景・中のコンテンツ */
+main .tel .tel_coution_bg {
+  height: 168px;
+  width: auto;
+  background-image: url(../images/reservation/bubble_telyoyaku.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+main .tel .tel_coution {
+  margin-bottom: 15px;
+}
+
+/* 魚のイラスト */
+main .tel .fish {
+  position: absolute;
+  top: 25px;
+  left: 110px;
+}
+
+/*--------------------------*/
+/* WEB予約 */
+/* 青い背景 */
+main .web {
+  height: 1050px;
+  width: auto;
+  background-image: url(../images/reservation/webyoyaku_bg_bl.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  padding-top: 50px;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+/* h3 アイコン */
+main .web h3::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/common/icon_shio.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+main .web h3 {
+  background-image: url(../images/reservation/bubble_s.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 53px;
+  line-height: 53px;
+  width: auto;
+  color: #29abe2;
+  margin-bottom: 40px;
+}
+
+/*内側の白い背景 */
+main .web .web_content_bg {
+  height: 756px;
+  width: auto;
+  background-image: url(../images/reservation/webyoyaku_bg_w.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 115px 20%;
+}
+
+main .web dl {
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: 20%;
+  margin-bottom: 75px;
+  font-weight: 500;
+}
+
+main .web dd {
+
+  width: 70%;
+}
+
+main .web dt {
+  width: 30%;
+}
+
+main .web .web_coution {
+  margin-bottom: 30px;
+}
+
+/* WEB予約はこちらボタン */
+main .web .web_btn {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  height: 141px;
+  line-height: 141px;
+  background-image: url(../images/reservation/yoyaku_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .web .web_btn a {
+  display: inline-block;
+  color: #313131;
+  font-weight: 500;
+}
+
+/* 24時間受付中 */
+main .web .baloon {
+  background-image: url(../images/reservation/fish&bubble.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  height: 211px;
+  width: 348px;
+}
+
+main .web .baloon p {
+  text-align: right;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 55px;
+  margin-right: 45px;
+}
+
+/* ---------------------------------------- */
+/* 診療時間 */
+
+main .consul_h {
+  padding-bottom: 200px;
+}
+
+main .consul_h h3::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/common/icon_shio_w.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+main .consul_h h3 {
+  margin-bottom: 50px;
+}
+
+
+main .consul_h .consul_h_bg {
+  width: 725px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+main .consul_h .consul_h_list {
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .consul_h_list th,
+td {
+  border-top: 3px solid #00a0e9;
+  border-left: 3px solid #00a0e9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .consul_h_list th:first-child {
+  border-left: none;
+  width: 30%;
+}
+
+main .consul_h_list tr:first-child th,
+tr:first-child td {
+  border-top: none;
+}
+
+main .consul_h_list td {
+  color: #7ecef4;
+}
+
+main .consul_h_list .dash {
+  color: #313131;
+  font-weight: 600;
+}
+
+/* ---------------------------------------- */
+
+
+/* sp */
+@media screen and (max-width:640px) {
+
+  /*----リセット----*/
+  main h2 {
+    margin: 0;
+  }
+
+  main .tel,
+  main .tel .tel_coution_bg,
+  main .web,
+  main .web .web_content_bg {
+    background-image: none;
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+
+  main .tel .receptionTime,
+  main .web .web_coution {
+    margin: 0;
+  }
+
+  main .web .web_content_bg {
+    padding: 0;
+  }
+
+  main .web dl {
+    flex-wrap: nowrap;
+    margin: 0;
+    text-align: center;
+  }
+
+  main .web dt,
+  main .web dd {
+    width: auto;
+  }
+
+  main .consul_h .consul_h_bg {
+    margin: 0;
+  }
+
+
+  /*----------------*/
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+main p{
+  text-align: left;
+}
+
+  main h2 {
+    margin: 80px auto 30px
+  }
+
+  main .tel h3,
+  main .web h3,
+  main .consul_h h3 {
+    margin-bottom: 30px;
+  }
+
+  /* 電話予約 */
+  main .tel {
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  main .tel .tel_num a {
+    font-size: 20px;
+  }
+
+  main .tel .receptionTime {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* 魚のイラスト */
+  main .tel .fish {
+    position: absolute;
+    top: 10px;
+    left: -40px;
+  }
+
+  main .tel .fish img {
+    width: 50%;
+    height: auto;
+  }
+
+
+  /* WEB予約 */
+  main .web {
+    background-color: #29abe2;
+    border-radius: 50px;
+    padding: 30px 3% 3%;
+    margin-bottom: 50px;
+  }
+
+  main .web .web_content_bg {
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 20px 25px;
+  }
+
+  main .web dl{
+    text-align: left;
+  }
+
+  main .web dd {
+    margin-left: 1em;
+    margin-bottom: 15px;
+  }
+
+  main .web dd:last-child {
+    margin-bottom: 30px;
+  }
+
+  main .web .web_coution {
+    margin-bottom: 10px;
+  }
+
+  /* web予約はこちら */
+  main .web .web_btn {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 25%;
+    width: 50%;
+    height: 70px;
+    background-size: contain;
+    line-height: 1.2;
+    font-size: 15px;
+  }
+
+  main .web .web_btn a {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  main .web .web_btn span {
+    display: block;
+  }
+
+  /* 24時間受付中 */
+  main .web .baloonSp {
+    background-image: url(../images/reservation/fish&bubble_sp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -15px;
+    top: 40px;
+    height: 95px;
+    width: 46%;
+  }
+
+  main .web .baloonSp p {
+    color: transparent;
+    font-size: 0;
+  }
+
+  /* ---------------------------- */
+
+  /* 診察時間 */
+  main .consul_h {
+    padding-bottom: 80px;
+  }
+
+  main .consul_h .consul_h_bg {
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  main .consul_h .consul_h_list th:first-child {
+    border-left: none;
+    width: 40%;
+  }
+
+  main .consul_h .consul_h_list th {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  main .consul_h .consul_h_list th,
+  td {
+    padding: 0;
+    border-top: 1px solid #00a0e9;
+    border-left: 1px solid #00a0e9;
+  }
+
+  /* ---------------------------- */
+
+}

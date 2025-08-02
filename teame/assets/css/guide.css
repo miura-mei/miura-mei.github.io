@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+/* 医院案内ページCSS */
+
+
+/* 背景色 */
+main {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: url(../images/common/bg_illust.png), #ade0f8;
+}
+
+
+/* タイトル「医院案内」 */
+main h2 {
+  width: 203px;
+  height: 84px;
+  line-height: 84px;
+  margin: 200px auto 0;
+  text-align: center;
+  background-image: url(../images/common/bubble_m_w.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+/* ↓ここから「医院案内」の各要素 */
+
+main h3 {
+  margin: 50px auto 0;
+  text-align: center;
+  font-family: 'Yusei Magic', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+main .clinic_guide h3,
+main .clinic_Facility h3,
+main .clinic_description h3 {
+  width: 151px;
+  height: 51px;
+  line-height: 51px;
+  padding-left: 10px;
+  background-image: url(../images/guide/title_bg_s.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* ↓ここから医院紹介 */
+
+main .clinic_guide .scene {
+  width: 800px;
+  background-color: #fff;
+  margin: 50px auto 0;
+  padding: 20px;
+  border-radius: 60px;
+}
+
+main .clinic_guide .viewer {
+  display: flex;
+  width: 800px;
+  margin: 10px auto 0;
+}
+
+main .clinic_guide .viewer li {
+  background-color: #fff;
+  padding: 6px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+/* ---------------------------------------- */
+/* ↓ここから院内見取り図 */
+
+main .clinic_sketch h3 {
+  width: 207px;
+  height: 66px;
+  line-height: 66px;
+  padding-left: 10px;
+  background-image: url(../images/guide/title_bg_m.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main .clinic_sketch .clinic_sketch_bg {
+  width: 650px;
+  margin: 50px auto 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+/* ---------------------------------------- */
+
+/* ↓ここから院内設備 */
+
+main .clinic_Facility dl {
+  justify-content: space-around;
+  text-align: left;
+  margin-top: 50px;
+}
+
+main .clinic_Facility dl dt {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
+
+main .clinic_Facility dl dd {
+  line-height: 1.5;
+  padding-left: 50px;
+}
+
+main .clinic_Facility .box_1,
+.clinic_Facility .box_2,
+.clinic_Facility .box_3 {
+  padding-top: 315px;
+  width: 409px;
+  height: 481px;
+  box-sizing: border-box;
+}
+
+main .clinic_Facility .box_1 {
+  background-image: url(../images/guide/kids_space.png);
+  background-repeat: no-repeat;
+}
+
+
+main .clinic_Facility .box_2 {
+  background-image: url(../images/guide/change_room.png);
+  background-repeat: no-repeat;
+}
+
+main .clinic_Facility .box_3 {
+  background-image: url(../images/guide/private_room.png);
+  background-repeat: no-repeat;
+}
+
+/* ---------------------------------------- */
+
+/* ↓ここから医院概要 */
+main .clinic_description dl {
+  width: 725px;
+  background: url(../images/guide/wave_bg.png) left bottom no-repeat, #fff;
+  background-size: 100% 20%;
+  border-radius: 30px;
+  margin: 50px auto 0;
+  box-sizing: border-box;
+  color: #313131;
+  font-size: 20px;
+  padding: 50px;
+  line-height: 2;
+}
+
+main .clinic_description dl dt {
+  float: left;
+  clear: left;
+  width: 155px;
+  font-weight: bold;
+}
+
+main .schedule_bg {
+  margin-top: 50px;
+  position: relative;
+}
+
+main .guide_schedule .illust {
+  position: absolute;
+  top: -35%;
+  left: -10%;
+}
+
+
+
+/* ---------------------------------------- */
+
+/* sp */
+@media screen and (max-width:640px) {
+
+  main h2 {
+    margin: 80px auto 0;
+  }
+
+  main h3 {
+    margin: 80px auto 0;
+  }
+
+  main .clinic_guide h3 {
+    margin-top: 50px;
+  }
+
+  /* 医院紹介 */
+
+  main .clinic_guide .scene {
+    width: auto;
+    border-radius: 30px;
+    margin: 30px 25px 0;
+    padding: 8px;
+  }
+
+  main .clinic_guide .viewer {
+    width: auto;
+    margin: 10px 25px 0;
+  }
+
+  main .clinic_guide .viewer li {
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 5px;
+  }
+
+  main .clinic_guide .viewer li:last-child {
+    margin-right: 0;
+  }
+
+  /* ------------------------ */
+
+  /* 院内見取り図 */
+
+  main .clinic_sketch .clinic_sketch_bg {
+    margin: 30px 25px 0;
+    width: auto;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  /* ------------------------ */
+
+  /* 院内設備 */
+
+  main .clinic_Facility .box_1,
+   .clinic_Facility .box_2,
+   .clinic_Facility .box_3 {
+    width: 80%;
+    height: auto;
+    background-size: 100% 100%;
+    padding-top: 65%;
+    padding-bottom: 15%;
+    margin-top: 30px;
+  }
+
+  main .clinic_Facility dl {
+    align-items: center;
+    margin-top: 0;
+  }
+
+  main .clinic_Facility dl dt {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  main .clinic_Facility dl dd {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 14em;
+  }
+
+  /* ↓ここから医院概要 */
+
+  main .clinic_description dl {
+    width: auto;
+    height: 100%;
+    background: url(../images/guide/wave_bg.png) left bottom no-repeat, #fff;
+    background-size: 100% 20%;
+    border-radius: 30px;
+    margin: 30px 25px 0;
+    padding: 20px 60px 50px;
+    font-size: 16px;
+  }
+
+  main .clinic_description dl dt {
+    float: none;
+    margin-top: 12px;
+  }
+
+  main .guide_schedule .illust{
+    top: -40%;
+    left: -10%;
+  }
+
+  main .guide_schedule .illust img {
+    width: 50%;
+  }
+
+}

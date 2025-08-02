@@ -1,0 +1,374 @@
+@charset "UTF-8";
+
+/* 初診の方へページCSS */
+
+
+/* 背景色 */
+main .cover_bg {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: #ade0f8;
+}
+
+
+
+
+/* タイトル「初診の方へ」 */
+main h2 {
+  width: 203px;
+  height: 84px;
+  line-height: 84px;
+  margin: 200px auto 25px;
+  background-image: url(../images/common/bubble_m_w.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+/* ↓ここから「初診の方へ」の各要素 */
+
+/*clearfix*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+/*くじら*/
+
+main .checkup_items_bg {
+  float: left;
+  width: 367px;
+  height: 384px;
+  background-image: url(../images/first/kujira_first.png);
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 10px auto 10px 80px;
+  z-index: 800;
+}
+
+main .checkup_items {
+  width: 45%;
+  height: 30%;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  line-height: 24px;
+}
+
+main .checkup_items li:before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  background-color: #313131;
+  border-radius: 50%;
+  position: relative;
+  top: -4px;
+  margin-right: 5px;
+}
+
+.checkup_items h3 {
+  padding-bottom: 20px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+main .checkup_items ul {
+  width: calc(8em);
+  margin: auto;
+}
+
+
+
+/*本文*/
+
+main .content {
+  position: relative;
+  vertical-align: middle;
+  display: table
+}
+
+/*位置等*/
+
+
+
+
+main .bbl1 {
+  margin: 80px 80px 20px auto;
+  background: url(../images/first/bg_bbl_1.png) no-repeat center;
+  width: 761px;
+  height: 229px;
+  position: relative;
+  right: 30px;
+}
+
+main .bbl2 {
+  margin: 100px auto 180px 80px;
+  background: url(../images/first/bg_bbl_2.png) no-repeat center;
+  width: 745px;
+  height: 275px;
+  float: left;
+}
+
+main .bbl3 {
+  margin: auto 80px auto auto;
+  background: url(../images/first/bg_bbl_3.png) no-repeat center;
+  width: 781px;
+  height: 269px;
+}
+
+main .bbl4 {
+  margin: 0 auto auto 80px;
+  background: url(../images/first/bg_bbl_4.png) no-repeat center;
+  width: 761px;
+  height: 229px;
+  position: relative;
+  bottom: 80px;
+}
+
+/*fade in*/
+.fadeIn {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 1s;
+}
+
+.fadeIn.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/*画像等*/
+
+main .img1 {
+  position: relative;
+  right: 80px;
+}
+
+main .img2 {
+  position: relative;
+  right: 630px;
+  top: 120px;
+}
+
+main .img3 {
+  position: relative;
+  top: 75px;
+}
+
+main .img4 {
+  position: relative;
+  left: 80px;
+  top: -80px
+}
+
+main .img5 {
+  position: relative;
+  top: -150px;
+  right: -50%;
+}
+
+
+
+main .contentitem {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+main .content h3 {
+  color: #29abe2;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 20px
+}
+
+main .content h3::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url(../images/common/icon_shio.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+main .details {
+  font-size: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  line-height: 105%;
+}
+
+
+
+
+
+
+footer {
+  margin: auto;
+  z-index: 980;
+
+}
+
+
+
+/* ---------------------------------------- */
+
+/* sp */
+
+@media screen and (max-width:640px) {
+
+  main {
+    width: 100%;
+  }
+
+  .Mbox {
+    padding: 0 25px;
+  }
+
+  main h2 {
+    margin-top: 80px;
+  }
+
+  #wrap {
+    width: 100%;
+  }
+
+  /*画像リ
+  サイズ*/
+  .imgS {
+    width: 10%;
+  }
+
+  .imgM {
+    width: 20%;
+  }
+
+  .imgL {
+    width: 40%;
+    margin: 20px;
+  }
+
+
+/*画像位置*/
+  main .img1 {
+    position: relative;
+    top: -250px;
+    right: 0%;
+  }
+
+  main .img2 {
+    position: relative;
+    top: -350px;
+    right: -30%;
+  }
+
+  main .img3 {
+    position: relative;
+    top: -25px;
+    right: 40%;
+  }
+
+  main .img4 {
+    top: -35px;
+    left: 50%;
+  }
+
+  main .img5 {
+    position: relative;
+    top: -120px;
+    right: 30%;
+  }
+
+  /*内容リサイズ*/
+
+  main .bbl1,
+  main .bbl2,
+  main .bbl3,
+  main .bbl4 {
+    margin: 3% 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    position: relative;
+    left: auto;
+    right: auto;
+    padding: 50px 0;
+    font-size: 60%;
+    line-height: 1.2em
+  }
+
+  main .bbl2 {
+    top: 50px;
+  }
+
+  main .details {
+    font-size: 0.7em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    line-height: 100%;
+  }
+
+  .content {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  main .content h3 {
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
+
+  /*くじら*/
+  main .checkup_items_bg {
+    width: 30%;
+    background-size: 100%;
+    position: absolute;
+    top: 13%;
+    left: -15%;
+    height: auto;
+  }
+
+  main .checkup_items_bg h3 {
+    font-size: 0.7em;
+    padding-bottom: 5px;
+    line-height: 1em;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  main .checkup_items_bg ul {
+    font-size: 50%;
+    line-height: 100%;
+    width: 70%;
+  }
+
+  main .checkup_items {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    font-size: 0.9em;
+    padding: 30% 0 40%;
+  }
+
+
+
+
+
+
+
+
+
+}

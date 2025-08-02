@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+/*アクセスページCSS */
+
+
+
+/* 背景色 */
+main .cover_bg {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: url(../images/common/wave_05.png) left bottom no-repeat, #96d7f6;
+  background-size: 100%;
+}
+
+
+/* 文字装飾 */
+/* 1.タイトル「アクセス」 */
+main h2 {
+  width: 203px;
+  height: 84px;
+  line-height: 84px;
+  margin: 200px auto 80px;
+  background-image: url(../images/common/bubble_m_w.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+/* 2.小見出しh3「セクションタイトル」 */
+main h3 {
+  color: #4ba9e2;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+
+main h3:before {
+  content: url(../images/guidance/icon_shio.png);
+}
+
+/* 3.h4「各ご案内」 */
+main h4 {
+  color: #4ba9e2;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-decoration: underline;
+}
+
+/* 4.h5「各お越しの方」 */
+main h5 {
+  color: #4ba9e2;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+/* js */
+.fadeIn {
+  opacity: 0;
+  transition: 2s;
+}
+.fadeIn.is-show {
+  opacity: 1;
+}
+
+.fadeIn_right {
+  opacity: 0;
+  transform: translate(50%, 0);
+  transition: 2s;
+}
+.fadeIn_right.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fadeIn_left {
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: 2s;
+}
+.fadeIn_left.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
+
+/* ↓ここから各要素 */
+
+/* メイン */
+main{
+  overflow: hidden;
+}
+
+/* セクションの白枠 */
+main .access_map,
+.access_content {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 150px;
+  justify-content: space-around;
+  position: relative;
+}
+
+/* ↓ここから「周辺マップ」 */
+/* 住所アイコン */
+main .accesspg_address:before {
+  content: url(../images/access/map_icon.png);
+}
+
+/* 並列地図の余白 */
+main .access_maps {
+  margin: 20px 60px 20px;
+}
+
+/* googleマップのサイズ */
+main .access_maps iframe {
+  width: 500px;
+  height: 420px;
+}
+
+/* 手書きマップの横幅 */
+main .map .map_hand {
+  width: 500px;
+}
+
+/* 手書きマップ＋貝海藻を含めた部分の高さ */
+main .map {
+  height: 450px;
+}
+
+/* 貝の場所指定 */
+main .map .bg_shells {
+  position: relative;
+  top: -40px;
+  right: 150px;
+}
+
+/* 海藻の場所指定 */
+main .map .bg_seaweed {
+  position: relative;
+  top: -200px;
+  left: 200px;
+}
+
+/* ↑ここまで「周辺マップ」 */
+
+/* ↓ここから「アクセス方法」 */
+/* 余白とサイズ指定 */
+main .access_content {
+  margin-bottom: 200px;
+  height: 400px;
+}
+
+
+main .access_content p {
+  padding-bottom: 20px;
+}
+
+main .access_contents {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+main .access_contents .access_content_left img {
+  width: 200px;
+}
+
+
+/* いるかの場所指定 */
+main .bg_dolphin {
+  position: relative;
+  top: -480px;
+  right: -480px;
+}
+
+/* くじらの場所指定 */
+main .bg_whale {
+  position: relative;
+  top: -200px;
+  left: -400px;
+}
+
+/* ↑ここまで「アクセス方法」 */
+
+
+/* ---------------------------------------- */
+
+/* sp */
+
+@media screen and (max-width:640px) {
+
+
+  /* SP版の表示設定 */
+
+  main h2 {
+    margin: 80px auto 40px;
+  }
+
+  /* 各セクションの余白 */
+  main .access_map, .access_content {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  /* セクションの余白 */
+  main .access_maps {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /* googleマップのサイズ */
+  main .access_maps iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* 手書きマップの横幅 */
+  main .map .map_hand {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* 手書きマップ＋貝海藻を含めた部分の高さ */
+  main .map {
+    height: auto;
+  }
+
+  main .access_content {
+    height: auto;
+  }
+
+  main .access_content p {
+    text-align: left;
+  }
+
+  main .access_contents .access_content_left img {
+    width: 100%;
+  }
+
+  /* いるかの場所指定 */
+  main .bg_dolphin_sp {
+    width: 40%;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+
+  /* くじらの場所指定 */
+  main .bg_whale_sp {
+    width: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+  }
+}
