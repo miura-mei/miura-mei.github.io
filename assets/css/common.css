@@ -60,7 +60,7 @@ h2 {
 
 /* ----- ここからフェードイン ----- */
 
-.animation {
+/* .animation {
   opacity: 0;
   transition: opacity 1s, transform 2s;
   transform: translateY(40px);
@@ -114,7 +114,7 @@ h2 {
   /* 表示させる */
   transform: translate(0, 0);
   /* 位置を最初の位置に戻す */
-}
+} */
 
 
 /* ----- ここまでフェードイン ----- */
