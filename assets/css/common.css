@@ -184,7 +184,6 @@ main .fv .photo_fv img {
 
 main .fv h1 {
   position: absolute;
-  z-index: 200;
   height: 14vh;
   text-align: right;
   top: 40%;
