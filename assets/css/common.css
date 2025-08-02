@@ -401,7 +401,7 @@ main .works ul li {
   text-align: center;
   width: calc(90% / 4);
   margin-bottom: 1%;
-  overflow: hidden;
+/*   overflow: hidden; */
 }
 
 main .works .brand li {
