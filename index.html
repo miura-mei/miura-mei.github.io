@@ -5,24 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <title>MIURA MEI｜PORTFOLIO</title>
+    <title>東住処</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Carter+One&family=Josefin+Sans:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Press+Start+2P&family=Rubik+Iso&family=Rubik+Spray+Paint&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/header.js"></script>
     <script src="assets/js/fadein.js"></script>
+
 </head>
-<body>
+
 <!--↓ここから「header」-->
 <header>
-    <nav>
-        <ul>
-            <li><a href="#">TOP</a></li>
-            <li><a href="#contents_01">ABOUT</a></li>
-            <li><a href="#contents_02">WORKS</a></li>
+    <div class="h_nav">
+        <p class="logo">
+            <a href="#">
+                <img src="assets/images/common/logo_kojin5.svg" alt="東住処">
+            </a>
+        </p>
+        <span class="h_nav_toggle">
+            <i></i>
+            <i></i>
+        </span>
+        <nav class="g_nav pc">
+            <ul>
+                <li><a href="schedule/index.html">スケジュール</a></li>
+                <li><a href="about/index.html">東住処のこと</a></li>
+                <li><a href="use/index.html">ご利用について</a></li>
+                <li><a href="access/index.html">アクセス</a></li>
+                <li><a href="everyday/index.html">東住日常</a></li>
+                <li><a href="place/index.html">東住スポット</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <nav class="sp_nav sp">
+        <ul class="menu">
+            <li><a href="schedule/index.html">スケジュール</a></li>
+            <li><a href="about/index.html">東住処のこと</a></li>
+            <li><a href="use/index.html">ご利用について</a></li>
+            <li><a href="access/index.html">アクセス</a></li>
+            <li><a href="everyday/index.html">東住日常</a></li>
+            <li><a href="place/index.html">東住スポット</a></li>
+        </ul>
+        <ul class="sp_sns">
+            <li class="sp_insta_icon">
+                <a href="#">
+                    <img src="assets/images/top/insta_icon.png" alt="instagram">
+                </a>
+            </li>
+            <li class="sp_twitter_icon">
+                <a href="#">
+                    <img src="assets/images/top/twitter_icon.png" alt="twitter">
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -32,197 +75,293 @@
 
 
     <!--↓ここから「ファーストビュー」-->
-    <div class="fv">
-        <!-- <div class="fluid_01"></div> -->
-        <h1>PORTFOLIO</h1>
-        <p class="name">MIURA MEI</p>
-        <!-- <div class="fluid_02"></div> -->
+    <ul class="f_v pc slider">
+        <li>
+            <img src="assets/images/top/first_view1.jpg" alt="ファーストビュー">
+        </li>
+        <li>
+            <img src="assets/images/top/ao.jpg" alt="ファーストビュー">
+        </li>
+        <li>
+            <img src="assets/images/top/kaori.jpg" alt="ファーストビュー">
+        </li>
+        <li>
+            <img src="assets/images/top/owarai.jpg" alt="ファーストビュー">
+        </li>
+    </ul>
+    <div class="f_v sp">
+        <img src="assets/images/top/first_view_sp.jpg" alt="メインビジュアル">
     </div>
-
     <!--↑ここまで「ファーストビュー」-->
-    <!--↓ここから「about」-->
-    <section id="contents_01" class="about">
-        <h2>
-            ABOUT
-        </h2>
-        <div class="profile inner">
+    <!-- ↓wrap開始 -->
+    <div class="inner">
+
+        <!--↓ここから「東住処のこと」-->
+        <section class="greeting">
+            <h2 class="animation">
+                訪れる人の拠りどころ、東住処
+            </h2>
             <div class="photo">
-                <img src="assets/images/pf.JPG" alt="プロフィール画像">
-            </div>
-            <div class="guide">
-                <p class="name animation">
-                    三浦 芽依
-                </p>
-
-                <p class="text">
-                    1990年、大阪府大阪市出身。<br>
-                    職業訓練校にてWeb制作の基礎を学んだ後、<br>
-                    SNS運用向けの画像・動画制作を中心に、デザインの仕事をしています。<br>
-                    限られた空間の中で“伝えること”を意識しながら、制作を行っています。<br>
-                    今後はWeb領域にも幅を広げ、取り組んでいきたいと考えております。<br>
-                </p>
-                <!--
-                <p class="tag animation">
-                    #お笑いに毎日触れる<br>
-                    #寝る前の漫画が日課<br>
-                    #踊ってばかりの国というバンドすき<br>
-                    #食べる飲む
-                </p>-->
+                <div class="appearance">
+                    <img src="assets/images/common/open.jpg" alt="東住処外観">
+                </div>
+                <div class="gallery pc">
+                    <img src="assets/images/common/gallery.jpg" alt="ギャラリー">
+                </div>
             </div>
 
-        </div>
-    </section>
-    <!--↑ここまで「about」-->
 
-    <!--↓ここから「skill」-->
-    <div class="section-wrapper">
-    <section class="skill inner">
 
-        <div class="box animation">
-            <h3>Photoshop</h3>
-            <div class="illust"><img src="assets/images/ps2.png" alt="Photoshop"></div>
-            <p class="pc">写真等の素材の加工ができ、バナーやデザインカンプの作成が可能です。</p>
-        </div>
-        <div class="box animation">
-            <h3>Illustrator</h3>
-            <div class="illust"><img src="assets/images/ai2.png" alt="Illustrator"></div>
-            <p class="pc">基本操作を理解し、アイコンやロゴ、バナー等の作成が可能です。</p>
-        </div>
-                <div class="box animation">
-            <h3>Premiere Pro</h3>
-            <div class="illust"><img src="assets/images/pr2.png" alt="Premiere Pro"></div>
-            <p class="pc">カット編集やテロップの挿入、BGMの追加などの基本的な動画編集ができます。</p>
-        </div>
-                <div class="box animation">
-            <h3>HTML5</h3>
-            <div class="illust"><img src="assets/images/html2.png" alt="HTML"></div>
-            <p class="pc">文書構造や文法を理解し、分かりやすいマークアップすることが可能です。</p>
-        </div>
-        <div class="box animation">
-            <h3>CSS</h3>
-            <div class="illust"><img src="assets/images/css2.png" alt="CSS"></div>
-            <p class="pc">セレクタやプロパティを理解し、見た目を整えます。</p>
-        </div>
-        <div class="box animation">
-            <h3>JS&nbsp;/&nbsp;jQuery</h3>
-            <div class="illust"><img src="assets/images/js2.png" alt="JavaScript/jQuery"></div>
-            <p class="pc">基本を理解し、動きのあるページを作成することが可能です。</p>
-        </div>
-        <!--<div class="box animation">
-            <h3>Figma</h3>
-            <div class="illust"><img src="assets/images/figma.png" alt="Figma"></div>
-            <p class="pc">基本操作を理解し、ワイヤーフレームやデザインカンプの作成が可能です。</p>
-        </div>-->
-    </section>
+            <div class="word">
+                <p class="animation">
+                    東住処の在る東住吉区は大阪市の南東部に位置し、<br class="pc">
+                    有名な繁華街や総合公園をもち、活気溢れる賑やかな町。
+                </p>
+                <p class="animation">
+                    しかし、一部の地域では高齢化や空き家問題等、<br class="pc">
+                    他の地域同様、様々な課題を抱えています。
+                </p>
+                <p class="animation">
+                    そんな東住吉で町の魅力を発見できる場を設けようと、<br class="pc">
+                    イベントやギャラリーを持つ複合施設<br class="pc">
+                    「東住処(ひがしすみか)」をオープンしました。
+                </p>
+                <p class="animation">
+                    訪れる人の住処のような拠りどころになればと思います。
+                </p>
+                <p class="button animation">
+                    <a href="about/index.html">&nbsp;東住処のこと</a>
+                </p>
+            </div>
+        </section>
+        <!--↑ここまで「東住処のこと」-->
+
+        <!--↓ここから「東住処からの告知」-->
+        <article class="notice">
+            <h3>
+                <span>
+                    これから東住処で行われるできごと
+                </span>
+                東住処からの告知
+            </h3>
+            <div class="n_container">
+                <article class="notice_card">
+                    <span class="category">イベント</span>
+                    <a href="schedule/index.html">
+                        <div class="day_a">2023.02.04(sat)</div>
+                        <div class="notice_img1">
+                            <img src="assets/images/top/kaori2.jpg" alt="かおりのみえかた / 山田景子">
+                        </div>
+                        <div class="day_b">13:00 start</div>
+                        <h4>
+                            かおりのみえかた / 山田景子
+                        </h4>
+                        <p>
+                            プラシーボ効果。香りが脳に刺激し、記憶や感情が思い起こされる。様々な香りを体験した時のあなたのかおりのみえかたとは。
+                        </p>
+
+                    </a>
+                </article>
+                <article class="notice_card">
+                    <span class="category">展示</span>
+                    <a href="schedule/index.html">
+                        <div class="day_a">2023.02.17(fri)</div>
+                        <div class="notice_img2">
+                            <img src="assets/images/top/ao2.jpg" alt="青々しい / 下津まさあき">
+                        </div>
+                        <div class="day_b">2023.03.03(fri)</div>
+                        <h4>
+                            青々しい / 下津まさあき
+                        </h4>
+                        <p>
+                            写真家下津まさあきの展示会。今回は青々しいというタイトル通り、青いです。とても。青すぎて心がギュッとなります。お楽しみに。
+                        </p>
+
+                    </a>
+                </article>
+                <article class="notice_card">
+                    <span class="category">イベント</span>
+                    <a href="schedule/index.html">
+                        <div class="day_a">2023.02.26(sun)</div>
+                        <div class="notice_img3">
+                            <img src="assets/images/top/owarai2.jpg" alt="お笑いライブ-笑い処-vol13">
+                        </div>
+                        <div class="day_b">18:00 start</div>
+                        <h4>
+                            お笑いライブ笑い処 -vol13-
+                        </h4>
+                        <p>
+                            毎月恒例の住み処も今月で13回目をむかえます。ネタありコーナーあり。東住処で大変人気のイベントです。ぜひお越しください！
+                        </p>
+                    </a>
+                </article>
+            </div>
+        </article>
+        <!--↑ここまで「東住処からの告知」-->
+
+        <!--↓ここから「東住吉の記録」-->
+        <article class="memory">
+            <h3>
+                <span>
+                    スタッフが町の暮らしをつづる
+                </span>
+                東住吉の記録
+            </h3>
+            <div class="m_container">
+                <article class="memory_card">
+
+                    <span class="category">東住日常</span>
+                    <div class="number">07</div>
+                    <a href="everyday/index.html">
+                        <div class="memory_img1">
+                            <img src="assets/images/top/memory_img1.jpg" alt="伊藤明">
+                        </div>
+                        <h4>
+                            一生ここおるやろなあ / 伊藤明
+                        </h4>
+                        <p>
+                            生まれてから一度もこの町を離れたことがない。この町の何が伊藤さんを繋ぎとめているのか？伊藤さんから見るこの町とは…
+                        </p>
+                    </a>
+                </article>
+                <article class="memory_card">
+                    <span class="category">東住スポット</span>
+                    <div class="number">06</div>
+                    <a href="place/index.html">
+                        <div class="memory_img2">
+                            <img src="assets/images/top/memory_img2.jpg" alt="喫茶レインボー">
+                        </div>
+                        <h4>
+                            葡萄のとき / Wine Bar
+                        </h4>
+                        <p>
+                            店主のこだわりが垣間見えるワインの種類の豊富さ。さらに試行錯誤を重ね、追及されたワインに合う一品はどれも絶品です。
+
+                        </p>
+                    </a>
+                </article>
+                <article class="memory_card">
+                    <span class="category">東住日常</span>
+                    <div class="number">06</div>
+                    <a href="everyday/index.html">
+                        <div class="memory_img3">
+                            <img src="assets/images/top/memory_img3.jpg" alt="喫茶レインボー">
+                        </div>
+                        <h4>
+                            ええとこやねん / 西尾みちこ
+                        </h4>
+                        <p>
+                            この町に長年続くカドヤの店主みちこさんは今日もみんなから愛される街の人気者。なんととっておきの場所を特別に教えて頂きました。
+
+                        </p>
+                    </a>
+                </article>
+            </div>
+        </article>
+        <!--↑ここまで「東住吉の記録」-->
+
+        <!--↓ここから「お知らせ」-->
+        <section class="news">
+            <h3>
+                お知らせ
+            </h3>
+            <dl>
+                <dt>
+                    2023.01.15
+                </dt>
+                <dd>
+                    <a href="#">3/4-5 臨時休業いたします。</a>
+                </dd>
+                <dt>
+                    2023.01.01
+                </dt>
+                <dd>
+                    <a href="#">年始のご挨拶</a>
+                </dd>
+                <dt>
+                    2022.12.23
+                </dt>
+                <dd>
+                    <a href="#">スタッフ募集。詳細はinstagramに!</a>
+                </dd>
+            </dl>
+            <p class="follow">
+                Follow me
+            </p>
+            <ul class="instagram_photo">
+                <li>
+                    <a href="#">
+                        <img src="assets/images/top/insta_img1.jpg" alt="instagramの写真">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/top/insta_img2.jpg" alt="instagramの写真">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/top/insta_img3.jpg" alt="instagramの写真">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/top/insta_img4.jpg" alt="instagramの写真">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/top/insta_img5.jpg" alt="instagramの写真">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/top/insta_img6.jpg" alt="instagramの写真">
+                    </a>
+                </li>
+            </ul>
+            <ul class="sns">
+                <li class="insta_icon">
+                    <a href="#">
+                        <img src="assets/images/top/insta_icon.png" alt="instagram">
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="assets/images/top/twitter_icon.png" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--↑ここまで「お知らせ」-->
     </div>
-    <!--↑ここまで「skill」-->
-
-    <!--↓ここから「works」-->
-    <section id="contents_02" class="works">
-        <h2>
-            WORKS
-        </h2>
-        <h3>
-            SNS投稿画像
-        </h3>
-        <div class="sns">
-            <p>
-                <span>使用ツール</span>&nbsp;Photoshop / Illustrator / Premiere Pro
-            </p>
-            <p>
-                <span>担当箇所</span>&nbsp;デザイン
-            </p>
-        </div>
-        <div class="title">
-            <h4>
-                キャンペーン
-            </h4>
-            <p>
-                Instagram、Xのプレゼントキャンペーン投稿
-            </p>
-        </div>
-        <ul class="inner animation campaign-section">
-            <li><a href="https://www.instagram.com/p/DMhfWxHPxU4/?img_index=1"><img src="assets/works/1.jpg"
-                        alt="キャンペーンバナー美酢" class="campaign-img"><span>Instagram / CP投稿 / 飲料</span></a>
-            </li>
-            <li><a href="https://www.instagram.com/p/DCoDzl7hr4q/?img_index=1"><img src="assets/works/4.jpg"
-                        alt="キャンペーンバナークナイプ" class="campaign-img"><span>Instagram / CP投稿 / バスアイテム</span></a>
-            </li>
-            <li><a href="https://x.com/UNIQLO_JP/status/1936031288202231871"><img src="assets/works/14.jpg"
-                        alt="キャンペーンバナーユニクロ" class="campaign-img"><span>X / CP投稿 / アパレル</span></a>
-            </li>
-            <li><a href="https://x.com/SunshineCity_PR/status/1896395112504254928/photo/1"><img src="assets/works/3.jpg"
-                        alt="キャンペーンバナーサンシャインシティ" class="campaign-img"><span>X / CP投稿 / 商業施設</span></a>
-            </li>
-
-        </ul>
-        <div class="title">
-            <h4>
-                通常投稿
-            </h4>
-            <p>
-                担当クライアントのFD、RL投稿
-            </p>
-        </div>
-            <ul class="inner animation brand">
-                <li><a href="https://www.instagram.com/p/DHfMfRXShfE/?img_index=1" target="_blank"><img src="assets/works/8.jpg"
-                        alt="ユニクロ"><span>Instagram / FD投稿 / アパレル</span></a>
-                        
-                </li>
-                <li><a href="https://www.instagram.com/p/DJvZEhGzeUZ/" target="_blank"><img src="assets/works/6.jpg"
-                        alt="ユニクロ"><span>Instagram / FD投稿 / アパレル</span></a></li>
-                <li><a href="ban/index.html" target="_blank"><img src="assets/works/7.jpg"
-                        alt="ユニクロ"><span>Instagram / FD投稿 / アパレル</span></a></li>
-                <li><a href="banner/index.html" target="_blank"><img src="assets/works/8.jpg"
-                        alt="ユニクロ"><span>Instagram / FD投稿 / アパレル</span></a></li>
-                <!-- </ul>
-            <ul class="inner animation brand"> -->
-                <li><a href="https://www.instagram.com/p/DK1ew0splEX/" target="_blank"><img src="assets/works/9.jpg"
-                        alt="美酢"><span>Instagram / FD投稿 / 飲食</span></a>
-                </li>
-                <li><a href="https://www.instagram.com/p/DMfBdNuPkzg/?img_index=1" target="_blank"><img src="assets/works/10.jpg"
-                        alt="美酢"></a><span>Instagram / FD投稿 / 飲食</span></li>
-                <li><a href="https://www.instagram.com/p/DHIcz-GvMfG/?img_index=1" target="_blank"><img src="assets/works/11.jpg"
-                        alt="ハイライフポーク"><span>Instagram / FD投稿 / 飲食</span></a></li>
-            <!-- </ul>
-
-        <h4>
-            ライフスタイル
-        </h4> 
-            <ul class="inner animation brand"> -->
-                <li><a href="https://www.instagram.com/p/DIOAi79JbTj/" target="_blank"><img src="assets/works/13.jpg"
-                        alt="ピジョン"><span>Instagram / RL動画 /  ベビー用品</span></a>
-                <li><a href="https://www.instagram.com/reel/DFe0mXnp6zX/" target="_blank"><img src="assets/works/15.jpg"
-                        alt="ピジョン"><span>Instagram / RL動画 /  ベビー用品</span></a>
-                </li>
-            </ul>
-
-        <h3>
-            自主制作
-        </h3>
-            <ul class="inner animation personal">
-                <li><a href="alone/index.html" target="_blank"><img src="assets/works/works_01.png"
-                        alt="職業訓練校における個人制作"><span>職業訓練校における個人制作</span></a>
-                </li>
-                <li><a href="group/index.html" target="_blank"><img src="assets/works/works_02.png"
-                        alt="職業訓練校におけるグループ制作"><span>職業訓練校におけるグループ制作</span></a>
-                </li>
-                <!-- <li><a href="ban/index.html" target="_blank"><span>WORKS no.3 制作バナー</span><img src="assets/images/works_03.jpg"
-                        alt="前職で制作した商品バナー"></a></li>
-                <li><a href="banner/index.html" target="_blank"><span>WORKS no.4 前職における制作バナー</span><img src="assets/images/works_04.jpg"
-                        alt="前職で制作した商品バナー"></a></li> -->
-            </ul>
-    </section>
-    <!--↑ここまで「works」-->
+    <!-- ↑wrap閉じ -->
 
 </main>
 <!--↑ここまで「main」-->
 
 <!--↓ここから「footer」-->
 <footer>
+    <div class="f_nav">
+        <p><span>東住処</span><br>
+            〒546-0043<br>
+            大阪府大阪市東住吉区駒川１丁目１−１００<br>
+            TEL:01-2345-6789
+        </p>
+        <nav>
+            <ul>
+                <li><a href="schedule/index.html">スケジュール</a></li>
+                <li><a href="about/index.html">東住処のこと</a></li>
+                <li><a href="use/index.html">ご利用について</a></li>
+                <li><a href="access/index.html">アクセス</a></li>
+                <li><a href="everyday/index.html">東住日常</a></li>
+                <li><a href="place/index.html">東住スポット</a></li>
+
+            </ul>
+        </nav>
+    </div>
     <p class="copy">
         <small>
-            &copy; 2025 miuramei All rights Reserved
+            &copy; 2023 東住処 All rights Reserved
         </small>
     </p>
 </footer>
