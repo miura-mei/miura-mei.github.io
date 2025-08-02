@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+main {
+  padding-top: 10%;
+  font-size: 0.9375rem;
+}
+
+main .works_01 h1 {
+    font-size: 1.625rem;
+    width: 70%;
+    text-align: left;
+    border-bottom: 1px solid #141414;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-weight: 400;
+    padding-right: 3%;
+}
+
+main .works_01 h1 span {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+main .works_01 h2 {
+    font-size: 1.375rem;
+    width: 15%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    font-weight: 400;
+}
+
+main .works_01 .sample {
+  text-align: center;
+}
+
+main .works_01 .sample img {
+  width: 40%;
+  transition: transform .4s ease;
+}
+
+main .works_01 .sample img:hover {
+  opacity: 0.8;
+  filter: brightness(100%);
+  transform: scale(1.05);
+}
+
+main .works_01 .url {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+  margin-bottom: 5%;
+}
+
+main .works_01 dl {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  line-height: 2;
+}
+
+main .works_01 dl dt {
+  float: left;
+  clear: both;
+}
+
+main .works_01 dl dd {
+  width: 70%;
+  margin-left: 15%;
+}
+
+main .works_01 .text {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+/* バナーのページ */
+
+main .works_01 .banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .works_01 .banner li {
+  width: 48%;
+  margin-bottom: 5%;
+}
+
+main .works_01 .banner li img {
+  width: 100%;
+}
+
+/* バナーのページ */
+
+/* -------- ここからレスポンシブ -------- */
+
+@media screen and (max-width:840px) {
+
+  main {
+    padding-top: 20%;
+  }
+  
+  main .works_01 h1 {
+    width: 90%;
+    text-align: left;
+  }
+
+  main .works_01 h1 span {
+    font-size: 1rem;
+  }
+
+  main .works_01 h2 {
+    width: 40%;
+    text-align: left;
+  }
+
+  main .works_01 .sample {
+    margin-bottom: 10%;
+  }
+
+  main .works_01 .url {
+    width: 80%;
+    margin-bottom: 15%;
+  }
+
+  main .works_01 dl {
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+    line-height: 1.5;
+  }
+
+  main .works_01 dl dt {
+    float: none;
+    text-decoration: underline;
+  }
+
+  main .works_01 dl dd {
+    margin-left: 0;
+    width: 80%;
+    margin-bottom: 3%;
+  }
+
+  main .works_01 .text {
+    width: 80%;
+  }
+}
+
+  @media screen and (max-width:640px) {
+    main .works_01 h1 {
+      font-size: 1.125rem;
+    }
+
+    main .works_01 h1 span {
+      font-size: 0.875rem;
+    }
+  }
