@@ -19,7 +19,6 @@ dt {
 body {
   margin: 0;
   color: #141414;
-  background-color: #f8f6f3;
   line-height: 1.8;
   font-family: 'Inter', 'Noto Sans JP', sans-serif;
   letter-spacing: 0.05em;
@@ -48,6 +47,10 @@ h2 {
   margin-left: 2%;
   padding-right: 2%;
   font-family: "Inter", sans-serif;
+}
+
+main{
+  background-color: #f8f6f3;
 }
 
 .pc {
