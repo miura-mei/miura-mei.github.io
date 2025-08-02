@@ -1,0 +1,164 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+main .about {
+    padding: 8% 3% 2% 10%;
+    margin-bottom: 6%;
+    background: linear-gradient(to bottom, #eee9e6 0%, #eee9e6 60%, #abced8 60%, #abced8 100%);
+}
+
+main .about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+}
+
+main .about .text {
+    margin-left: 3%;
+    font-size: 0.875rem;
+    line-height: 2.2;
+}
+
+main .about .text p {
+    margin-bottom: 1.5%;
+}
+
+/* 共通 */
+
+main .about_box h2 {
+    font-size: 1.875rem;
+    margin-bottom: 8%;
+    padding-bottom: 5%;
+    writing-mode: vertical-rl;
+    margin-right: auto;
+    width: 50%;
+    border-bottom: 1px dotted #000;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+main .about_box .place {
+    align-items: flex-start;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: left;
+}
+
+main .about_box .text_r p,
+main .about_box .text_l p {
+    margin-bottom: 5%;
+}
+
+main .about_box .text_r p:last-of-type,
+main .about_box .text_l p:last-of-type {
+    margin: 0;
+}
+
+main .about_box .text_r {
+    margin-right: 5%;
+    margin-left: auto;
+    /* margin-left: 5%; */
+    width: 45%;
+    background-color: rgba(238,233,230,0.7);
+    padding: 5%;
+}
+
+main .about_box .text_l {
+    margin-left: 5%;
+    margin-right: auto;
+    width: 45%;
+    background-color: rgba(238,233,230,0.7);
+    padding: 5%;
+    text-align: right;
+}
+
+main .about_box {
+    display: flex;
+    margin-bottom: 15%;
+    align-items: flex-end;
+}
+
+main .about_box:nth-of-type(2) {
+    justify-content: flex-end;
+}
+
+/* ↓ここから『東住吉という地域』 */
+
+main .about_box:first-of-type {
+    background-image: url(../images/about/about_town.jpg);
+    background-repeat: no-repeat;
+    background-position: 10% 80%;
+    /* background-attachment: fixed; */
+    background-size: 50%;
+    margin-left: 3%;
+}
+
+main .about_box:nth-last-of-type(2) {
+    background-image: url(../images/about/about_place.jpg);
+    background-repeat: no-repeat;
+    background-position: 90% 80%;
+    /* background-attachment: fixed; */
+    background-size: 50%;
+    margin-right: 3%;
+}
+
+main .about_box:last-of-type {
+    background-image: url(../images/about/about_eat.jpg);
+    background-repeat: no-repeat;
+    background-position: 10% 80%;
+    /* background-attachment: fixed; */
+    background-size: 50%;
+    margin-left: 3%;
+}
+
+/* ↑ここまで『東住吉という地域』*/
+
+
+/* レスポンシブ */
+@media screen and (max-width:640px) {
+    main .about {
+        padding: 25% 10% 0;
+        margin-bottom: 18%;
+    }
+
+    main .about .text p {
+        margin-bottom: 5%;
+    }
+
+    main .about_box {
+        flex-direction: column;
+    }
+
+    main .about_box h2 {
+        writing-mode: horizontal-tb;
+        width: 80%;
+        padding-bottom: 0;
+    }
+
+    main .about_box .text_r,
+    main .about_box .text_l {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main .about_box .photo {
+        margin-bottom: 7%;
+    }
+
+    main .about_box:first-of-type,
+    main .about_box:nth-last-of-type(2),
+    main .about_box:last-of-type {
+        background-image: none;
+        margin: 0;
+    }
+
+    main .about_box .text_l {
+        text-align: left;
+    }
+
+    main .about_box .place {
+        margin-left: 0;
+    }
+
+}

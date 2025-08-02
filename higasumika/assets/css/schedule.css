@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* * {
+    outline: 1px solid red;
+} */
+
+main .schedule {
+    padding: 8% 3% 2% 10%;
+    margin-bottom: 6%;
+    background: linear-gradient(to bottom, #eee9e6 0%, #eee9e6 60%, #abced8 60%, #abced8 100%);
+}
+
+main .schedule h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1%;
+}
+
+main .schedule .text {
+    margin-left: 3%;
+    font-size: 0.875rem;
+}
+
+main .schedule .text p {
+    margin-bottom: 1.5%;
+}
+
+main .notice_item h2 {
+    font-size: 1.875rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-left: 6%;
+}
+
+main .notice_item h2::before {
+    content: "";
+    background-color: #000000;
+    width: 2%;
+    height: 2px;
+    margin-right: 0.5%;
+}
+
+main .notice_item .n_container {
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+main .notice_item .notice_card {
+    width: 100%;
+    display: flex;
+    margin-bottom: 8%;
+}
+
+main .notice_item .notice_card .photo {
+    width: 30%;
+}
+
+main .notice_item .notice_card .text {
+    padding-top: 5%;
+    margin-left: 10%;
+}
+
+main .notice_item .notice_card .text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+main .notice_item .notice_card .text p {
+    margin-bottom: 4%;
+}
+
+main .notice_item .notice_card .text a {
+    display: block;
+    text-decoration: underline;
+}
+
+
+
+
+/* レスポンシブ */
+
+@media screen and (max-width:640px) {
+    main .schedule {
+        padding: 25% 10% 0;
+        margin-bottom: 18%;
+    }
+
+    main .schedule .text p {
+        margin-bottom: 5%;
+    }
+
+    main .n_container .notice_card:first-of-type,
+    main .notice_item .n_container {
+        width: 100%;
+    }
+
+    main .notice_item .notice_card {
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+
+    main .notice_item h2 {
+        margin-left: 0;
+        margin-bottom: 5%;
+        justify-content: center;
+        font-size: 1.375rem;
+    }
+
+    main .notice_item .n_container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main .notice_item .notice_card .photo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main .notice_item .notice_card .text {
+        width: 85%;
+        margin-left: 0 auto;
+    }
+}

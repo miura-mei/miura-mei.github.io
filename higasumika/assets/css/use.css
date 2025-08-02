@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+/* * {
+    outline: 1px solid red;
+} */
+
+/* ここから上のあいさつ文 */
+
+main .use {
+  padding: 8% 3% 2% 10%;
+  margin-bottom: 6%;
+  background: linear-gradient(to bottom, #eee9e6 0%, #eee9e6 60%, #abced8 60%, #abced8 100%);
+}
+
+main .use h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+
+main .use .text {
+  margin-left: 3%;
+  font-size: 0.875rem;
+}
+
+main .use .text p {
+  margin-bottom: 1.5%;
+}
+
+/* ここまで上のあいさつ文 */
+
+/* 共通 */
+
+main .use_item,
+main .use_event,
+main .use_gallery,
+main .use_reserve {
+  margin-bottom: 15%;
+}
+
+/* ここまで共通 */
+
+/* ここから見出し */
+
+main h2 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+main .use_item h2,
+main .use_reserve h2 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+main h2::before {
+  content: "";
+  background-color: #000000;
+  width: 2%;
+  height: 2px;
+  margin-right: 0.5%;
+}
+
+main .use_item h2::before,
+main .use_reserve h2::before {
+  width: 4%;
+}
+
+
+
+main .use_event h3,
+main .use_gallery h3,
+main .use_item h3,
+main .use_reserve h3 {
+  font-size: 1.875rem;
+  margin-bottom: 2%;
+}
+
+main .use_event h3,
+main .use_gallery h3 {
+  writing-mode: vertical-rl;
+  border-bottom: 1px dotted #000;
+  height: 25%;
+  width: 25%;
+  padding-top: 5%;
+}
+
+main .use_event h4,
+main .use_gallery h4,
+main .use_item h4,
+main .use_reserve h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+/* ここまで見出し */
+
+/* ここから1f2fテーブル */
+
+main .use_event table,
+main .use_gallery table,
+main .use_reserve table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .use_event tr th,
+main .use_gallery tr th,
+main .use_reserve tr th {
+  background-color: #abced8;
+  padding: 1% 2%;
+  border-right: 1px solid #fff;
+  font-weight: normal;
+}
+
+main .use_event tr th:last-of-type,
+main .use_gallery tr th:last-of-type,
+main .use_reserve tr th:last-of-type {
+  border: none;
+}
+
+main .use_event tr td,
+main .use_gallery tr td,
+main .use_reserve tr td {
+  padding: 2%;
+  text-align: center;
+}
+
+/* ここまで1f2fテーブル */
+
+/* ここから1f2f定義リスト */
+
+main .use_event dl dt,
+main .use_gallery dl dt {
+  float: left;
+  clear: left;
+  width: 45%;
+  text-align: right;
+  margin-right: 3%;
+  margin-bottom: 1%;
+}
+
+main .use_event dl dd,
+main .use_gallery dl dd {
+  margin-bottom: 1%;
+}
+
+/* ここまで1f2f定義リスト */
+
+
+
+/* 1階レンタルスペース */
+
+main .use_event h2 {
+  margin-left: 6%;
+}
+
+main .use_event h3 {
+  margin-left: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+
+main .use_event .interior {
+  margin-bottom: 7%;
+}
+
+main .use_event p {
+  text-align: center;
+}
+
+main .use_event p,
+main .use_event dl {
+  margin-bottom: 5%;
+}
+
+/* 1階の写真 */
+
+main .use_event .photo {
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+main .use_event figure {
+  margin-bottom: 2%;
+}
+
+main .use_event ul {
+  display: flex;
+}
+
+main .use_event ul li {
+  width: 20%;
+  margin-right: 2%;
+}
+
+main .use_event ul li img {
+  width: 100%;
+}
+
+/* ここまで1階の写真 */
+
+/* ここまで1階レンタルスペース */
+
+/* 2階ギャラリースペース */
+
+main .use_gallery h2 {
+  text-align: right;
+  justify-content: flex-end;
+  margin-right: 6%;
+}
+
+main .use_gallery h3 {
+  margin-right: 10%;
+  display: flex;
+}
+
+main .use_gallery .interior {
+  margin-bottom: 7%;
+}
+
+main .use_gallery dl {
+  margin-bottom: 5%;
+}
+
+
+/* 2階ギャラリーの写真 */
+
+main .use_gallery .photo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .use_gallery figure {
+  margin-bottom: 2%;
+}
+
+main .use_gallery ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .use_gallery ul li {
+  width: 20%;
+  margin-right: 2%;
+}
+
+main .use_gallery ul li:last-of-type {
+  margin-right: 0;
+}
+
+main .use_gallery ul li img {
+  width: 100%;
+}
+
+/* ここまで2階ギャラリーの写真 */
+
+/* ここまで2階ギャラリースペース */
+
+
+/* ギャラリーの写真 */
+
+main .use_gallery main .use_gallery ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .use_gallery ul li {
+  width: 20%;
+}
+
+main .use_gallery ul li img {
+  width: 100%;
+}
+
+/* ここまで2階ギャラリースペース */
+
+/* ここから設備 */
+
+main .use_item ul {
+  text-align: center;
+}
+
+/* ここまで設備 */
+
+/* ここからご予約について */
+
+main .use_reserve p {
+  text-align: center;
+}
+
+main .use_reserve .request,
+main .use_reserve .pay {
+  margin-bottom: 5%;
+}
+
+main .use_reserve .qr img {
+  width: 20%;
+}
+
+main .use_reserve .mail {
+  text-decoration: underline;
+}
+
+main .use_reserve dl dt {
+  float: left;
+  clear: left;
+}
+
+/* レスポンシブ */
+
+@media screen and (max-width:640px) {
+  main .use {
+    padding: 25% 10% 0;
+    margin-bottom: 18%;
+  }
+
+  main .use .text p {
+    margin-bottom: 5%;
+  }
+
+  main .use_event h3,
+  main .use_gallery h3 {
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    font-size: 1.375rem;
+    ;
+  }
+
+  main .use_event ul li,
+  main .use_gallery ul li {
+    width: auto;
+  }
+
+  main .use_event p,
+  main .use_reserve p {
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .use_event dl dt,
+  main .use_gallery dl dt {
+    width: 40%;
+  }
+
+  main .use_event table,
+  main .use_gallery table,
+  main .use_reserve table {
+    width: 98%;
+  }
+
+  main .use_item,
+  main .use_event,
+  main .use_gallery,
+  main .use_reserve {
+    margin-bottom: 20%;
+  }
+
+  main .use_gallery .interior,
+  main .use_gallery .interior {
+    margin-bottom: 10%;
+  }
+
+  main .use_event h4,
+   main .use_gallery h4,
+    main .use_item h4,
+     main .use_reserve h4 {
+      margin-bottom: 5%;
+     }
+
+     main .use_reserve .mail {
+      text-align: center;
+      padding-top: 3%;
+     }
+
+}

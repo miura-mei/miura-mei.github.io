@@ -1,0 +1,788 @@
+@charset "UTF-8";
+
+/* * {
+    outline: 1px solid red;
+} */
+
+/* --------------------- ここから共通項 --------------------- */
+
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dd,
+dl,
+figure {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+    background-color: #eee9e6;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Shippori Mincho', serif;
+}
+
+.inner {
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+/* ----- ここからフェードイン ----- */
+
+.animation {
+    opacity: 0;
+    transition: opacity 1s, transform 2s;
+    transform: translateY(40px);
+}
+
+.animation_2 {
+    opacity: 0;
+    transition: opacity 1s, transform 2s;
+    transform: translateY(50px);
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.animation-left {
+    opacity: 0;
+    transition: opacity 2s, transform 3s;
+    transform: translate(100px, 0);
+}
+
+.animation-left2 {
+    opacity: 0;
+    transition: opacity 2s, transform 3s;
+    transform: translate(100px, 0);
+}
+
+.active-left {
+    opacity: 1;
+    /* 表示させる */
+    transform: translate(0, 0);
+    /* 位置を最初の位置に戻す */
+}
+
+.animation-right {
+    opacity: 0;
+    transition: opacity 2s, transform 3s;
+    transform: translate(-100px, 0);
+}
+
+.animation-right2 {
+    opacity: 0;
+    transition: opacity 2s, transform 3s;
+    transform: translate(-100px, 0);
+}
+
+.active-right {
+    opacity: 1;
+    /* 表示させる */
+    transform: translate(0, 0);
+    /* 位置を最初の位置に戻す */
+}
+
+
+/* ----- ここまでフェードイン ----- */
+
+/* --------------------- ここまで共通項 --------------------- */
+
+/* -------- ここからheader -------- */
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 1.5% 5%;
+    box-sizing: border-box;
+    background-color: rgba(238, 233, 230, 1);
+    z-index: 9999;
+}
+
+header .logo a img {
+    width: 25%;
+}
+
+header .h_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    width: 70%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    font-size: 0.875rem;
+}
+
+/* -------- ここまでheader -------- */
+
+/* --------------------- ここからmain --------------------- */
+
+/* ------------ ここからファーストビュー ------------ */
+main .f_v {
+    padding: 9% 5% 6%;
+    text-align: center;
+    background: linear-gradient(to bottom, #eee9e6 0%, #eee9e6 40%, #abced8 40%, #abced8 100%);
+}
+
+main .f_v img {
+    width: 100%;
+    height: 100%;
+}
+
+/* -------- ここからスライダー -------- */
+
+main .slider {
+    width: 100%;
+    /* スライダーの幅を指定*/
+    list-style: none;
+}
+
+.slick-dots {
+    width: 50%;
+    text-indent: -9999px;
+    text-decoration: none;
+    display: block;
+    bottom: 0;
+}
+
+.slick-prev {
+    left: 1%;
+}
+
+.slick-next {
+    right: 2%;
+}
+
+.slick-prev::before {
+    content: "＜";
+    color: #eee9e6;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.slick-next::before {
+    content: "＞";
+    color: #eee9e6;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+/* -------- ここまでスライダー -------- */
+
+/* ------------ここまでファーストビュー ------------ */
+
+/* -------- ここからあいさつ文 -------- */
+
+main .greeting {
+    position: relative;
+    height: 900px;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    margin-bottom: 5%;
+    background-image: url(../images/common/top_bg_01.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 80%;
+    background-position: right 15% bottom 25%;
+}
+
+main .greeting .appearance {
+    position: absolute;
+    top: 10%;
+    right: 18%;
+    /* right: 150px; */
+    width: 50%;
+}
+
+main .greeting .appearance img {
+    width: 100%;
+}
+
+main .greeting .gallery {
+    position: absolute;
+    margin-top: 25%;
+    left: 3%;
+    width: 35%;
+}
+
+main .greeting .gallery img {
+    width: 100%;
+}
+
+main .greeting h2 {
+    position: absolute;
+    font-size: 2.25rem;
+    writing-mode: vertical-rl;
+    right: 8%;
+    top: 20%;
+}
+
+main .greeting .word {
+    position: absolute;
+    height: 20%;
+    right: 20%;
+    margin-top: 38%;
+    line-height: 2.2;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 500;
+}
+
+main .greeting .word p {
+    margin-bottom: 8%;
+}
+
+main .greeting .word .button a {
+    text-decoration: underline;
+    font-size: 1.125rem;
+}
+
+main .greeting .word a::before {
+    content: "→";
+}
+
+/* -------- ここまであいさつ文 -------- */
+
+/* -------- ここから東住処の告知 -------- */
+
+main .notice {
+    margin-bottom: 15%;
+}
+
+main .notice h3 {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+main .notice h3 span {
+    display: block;
+    font-size: 0.875rem;
+}
+
+main .n_container {
+    margin: 0 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .n_container .notice_card {
+    width: 30%;
+}
+
+main .n_container .notice_card .notice_img1,
+main .n_container .notice_card .notice_img2,
+main .n_container .notice_card .notice_img3 {
+    overflow: hidden;
+}
+
+main .n_container .notice_card img {
+    width: 100%;
+    margin-bottom: 3%;
+    height: auto;
+    transition: transform .4s ease;
+}
+
+main .n_container .notice_card img:hover {
+    opacity: 0.8;
+    filter: brightness(100%);
+    transform: scale(1.05);
+}
+
+main .notice_card .day_a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+main .notice_card .day_b {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+}
+
+main .notice_card .day_a::after {
+    content: "";
+    background-color: #000000;
+    width: 35%;
+    height: 1px;
+    margin-left: 10%;
+}
+
+main .notice_card .day_b::before {
+    content: "";
+    background-color: #000000;
+    width: 35%;
+    height: 1px;
+    margin-right: 10%;
+}
+
+main .notice_card .category {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 0 3%;
+    font-size: 1.0625rem;
+}
+
+main .notice_card h4 {
+    font-size: 1.125rem;
+    margin-bottom: 2%;
+}
+
+main .notice_card p {
+    letter-spacing: 0.1rem;
+}
+
+/* -------- ここまで東住処の告知 -------- */
+
+/* -------- ここから東住の記録 -------- */
+
+main .memory {
+    margin-bottom: 15%;
+}
+
+main .memory h3 {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+main .memory h3 span {
+    display: block;
+    font-size: 0.875rem;
+}
+
+main .memory .m_container {
+    margin: 0 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .m_container .memory_card {
+    width: 30%;
+}
+
+main .m_container .memory_card .memory_img1,
+main .m_container .memory_card .memory_img2,
+main .m_container .memory_card .memory_img3 {
+    overflow: hidden;
+}
+
+main .m_container .memory_card img {
+    width: 100%;
+    margin-bottom: 5%;
+    height: auto;
+    transition: transform .4s ease;
+}
+
+main .m_container .memory_card img:hover {
+    opacity: 0.8;
+    filter: brightness(100%);
+    transform: scale(1.05);
+}
+
+main .memory_card .category {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 0 3%;
+    font-size: 1.0625rem;
+}
+
+main .memory_card h4 {
+    font-size: 1.125rem;
+    margin-bottom: 2%;
+}
+
+main .memory_card p {
+    letter-spacing: 0.1rem;
+}
+
+main .memory_card .number {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+main .memory_card .number::before {
+    content: "No.";
+    font-size: 0.9375rem;
+}
+
+/* -------- ここまで東住の記録 -------- */
+
+/* -------- ここからお知らせ -------- */
+
+main .news {
+    padding-bottom: 20%;
+}
+
+main .news h3 {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+main .news dl {
+    width: 98%;
+    margin: 0 auto 3%;
+}
+
+main .news dt {
+    float: left;
+    clear: left;
+    width: 40%;
+    text-align: right;
+    margin-right: 3%;
+    margin-bottom: 1%;
+}
+
+main .news dd {
+    margin-bottom: 1%;
+}
+
+main .news dd a:hover {
+    text-decoration: underline;
+}
+
+main .news .instagram_photo {
+    /* display: flex; */
+    margin-bottom: 3%;
+}
+
+main .news .instagram_photo li {
+    width: 200px;
+    margin-right: 5px;
+}
+
+main .news .instagram_photo li a img:hover {
+    opacity: 0.5;
+    filter: brightness(130%);
+}
+
+main .follow {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Noto Serif JP', serif;
+    margin-bottom: 2%;
+}
+
+main .news .sns {
+    display: flex;
+    justify-content: center;
+}
+
+main .news .sns .insta_icon {
+    margin-right: 50px;
+}
+
+main .news .sns .twitter_icon {
+    margin-left: 50px;
+}
+
+/* -------- ここまでお知らせ -------- */
+
+/* --------------------- ここまでmain --------------------- */
+
+
+/* -------- ここからfooter -------- */
+
+footer {
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    background: url(../images/top/footer_bg.jpg) no-repeat center top, linear-gradient(to bottom, #eee9e6 0%, #eee9e6 40%, #abced8 40%, #abced8 100%);
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+footer .f_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 10% 10% 10% 0;
+    position: relative;
+    z-index: 100;
+}
+
+footer .f_nav p span {
+    font-size: 1.25rem;
+}
+
+footer .f_nav p {
+    color: #fff;
+}
+
+footer .f_nav li {
+    margin-top: 20%;
+}
+
+footer .f_nav li a {
+    color: #fff;
+}
+
+footer .copy {
+    text-align: center;
+    position: relative;
+    z-index: 50;
+    background-color: #abced8;
+    width: 100%;
+    padding: 1% 0;
+}
+
+/* -------- ここまでfooter -------- */
+
+
+
+/* -------- ここからレスポンシブ -------- */
+
+@media screen and (max-width:640px) {
+
+    /* -------- 共通項 -------- */
+
+    body {
+        font-size: 0.875rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer .f_nav ul {
+        display: none;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    /* -------- ヘッダー -------- */
+
+    header nav {
+        width: 100%;
+        /* height: 100vh; */
+    }
+
+    header .h_nav {
+        align-items: normal;
+    }
+
+    .h_nav_toggle {
+        position: relative;
+        width: 3rem;
+        height: 2.5rem;
+        margin-top: 8%;
+    }
+
+    .h_nav_toggle i {
+        width: 100%;
+        text-align: center;
+        height: 2px;
+        background-color: #333;
+        position: absolute;
+        transition: transform .5s, opacity .5s;
+    }
+
+    .h_nav_toggle i:nth-child(1) {
+        top: 0;
+    }
+
+    .h_nav_toggle i:nth-child(2) {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+    }
+
+    header .sp_nav {
+        display: none;
+        height: 100vh;
+    }
+
+    header .sp_nav .menu {
+        flex-direction: column;
+        padding-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    header .sp_nav .menu li {
+        line-height: 60px;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    header .sp_nav .menu li a {
+        font-size: 1rem;
+    }
+
+    header .sp_nav .sp_sns {
+        width: 30%;
+        display: block;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* -------- ごあいさつ文 -------- */
+
+    main .greeting {
+        background-size: 100%;
+    }
+
+    main .greeting,
+    main .greeting .appearance,
+    main .greeting .gallery,
+    main .greeting h2,
+    main .greeting .word {
+        position: static;
+    }
+
+    main .greeting {
+        height: 100%;
+        background-position: right 15% bottom 0;
+    }
+
+    main .greeting h2 {
+        writing-mode: horizontal-tb;
+        text-align: left;
+        margin-bottom: 5%;
+        font-size: 1.375rem;
+    }
+
+    main .greeting .appearance {
+        width: 80%;
+        margin-bottom: 5%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    main .greeting .gallery {
+        width: 60%;
+        margin: 0 0 0 auto;
+        margin-bottom: 5%;
+    }
+
+    main .greeting .word {
+        margin: 0;
+        width: 96%;
+        height: auto;
+        margin: 0 auto 10%;
+    }
+
+    /* -------- イベントとギャラリー -------- */
+
+    main .n_container .notice_card,
+    main .m_container .memory_card {
+        width: 48%;
+        margin-bottom: 8%;
+    }
+
+    main .n_container .notice_card:first-of-type,
+    main .m_container .memory_card:first-of-type {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main .n_container,
+    main .memory .m_container {
+        margin: 0;
+    }
+
+    main .notice h3,
+    main .memory h3,
+    main .news h3 {
+        font-size: 1.375rem;
+    }
+
+    main .notice h3 span,
+    main .memory h3 span {
+        font-size: 0.625rem;
+    }
+
+    /* -------- お知らせ -------- */
+
+    main .news dt {
+        width: 35%;
+    }
+
+    /* -------- フッター -------- */
+
+    footer .f_nav p,
+    footer .copy {
+        font-size: 0.5rem;
+    }
+
+    footer .f_nav p span {
+        font-size: 0.750rem;
+    }
+
+    .animation,
+    .animation_2,
+    .animation-left,
+    .animation-left2,
+    .animation-right,
+    .animation-right2 {
+        opacity: 1;
+        /* 表示させる */
+        transform: translate(0, 0);
+        /* 位置を最初の位置に戻す */
+    }
+}

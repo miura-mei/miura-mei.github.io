@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* * {
+    outline: 1px solid red;
+} */
+
+main .place {
+    padding: 8% 3% 2% 10%;
+    margin-bottom: 6%;
+    background: linear-gradient(to bottom, #eee9e6 0%, #eee9e6 60%, #d2b48c 60%,  #d2b48c 100%);
+}
+
+main .place h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+}
+
+main .place .text {
+    margin-left: 3%;
+    font-size: 0.875rem;
+}
+
+main .place .text p {
+    margin-bottom: 1.5%;
+}
+
+main .memory .buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+main .memory {
+    margin-bottom: 10%;
+}
+
+main .memory button {
+    border: none;
+    background-color: #d2b48c;
+    margin-left: 1%;
+    font-size: 1rem;
+    margin-bottom: 2%;
+    padding: 0.5% 1%;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+main .memory button:hover {
+    opacity: 0.5;
+    filter: brightness(100%);
+    text-decoration: underline;
+}
+
+main .memory .memory_card {
+    margin-bottom: 10%;
+}
+
+/* レスポンシブ */
+
+@media screen and (max-width:640px) {
+    main .place {
+        padding: 25% 10% 0;
+        margin-bottom: 18%;
+    }
+
+    main .place .text p {
+        margin-bottom: 5%;
+    }
+
+    main .m_container .memory_card:first-of-type {
+        width: 48%;
+    }
+}
