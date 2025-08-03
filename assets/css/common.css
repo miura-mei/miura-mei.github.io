@@ -531,6 +531,14 @@ footer {
     margin-bottom: 10%;
   }
 
+    main .about .profile .photo img {
+    width: 80%;
+  }
+
+  main .about .profile .text {
+    font-size: 0.75rem;
+  }
+
   /* スキル */
 
   /* main .skill {
@@ -567,6 +575,10 @@ footer {
   main .works h4 {
     width: 50%;
     padding: 0;
+  }
+
+  main .works .title {
+    margin-bottom: 6%;
   }
 
   main .works .title p {
