@@ -62,6 +62,67 @@ main{
   display: none;
 }
 
+/* ----- ここからフェードイン ----- */
+
+.animation {
+  opacity: 0;
+  transition: opacity 1s, transform 2s;
+  transform: translateY(40px);
+}
+
+.animation_2 {
+  opacity: 0;
+  transition: opacity 1s, transform 2s;
+  transform: translateY(50px);
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.animation-left {
+  opacity: 0;
+  transition: opacity 2s, transform 3s;
+  transform: translate(100px, 0);
+}
+
+.animation-left2 {
+  opacity: 0;
+  transition: opacity 2s, transform 3s;
+  transform: translate(100px, 0);
+}
+
+.active-left {
+  opacity: 1;
+  /* 表示させる */
+  transform: translate(0, 0);
+  /* 位置を最初の位置に戻す */
+}
+
+.animation-right {
+  opacity: 0;
+  transition: opacity 2s, transform 3s;
+  transform: translate(-100px, 0);
+}
+
+.animation-right2 {
+  opacity: 0;
+  transition: opacity 2s, transform 3s;
+  transform: translate(-100px, 0);
+}
+
+.active-right {
+  opacity: 1;
+  /* 表示させる */
+  transform: translate(0, 0);
+  /* 位置を最初の位置に戻す */
+}
+
+
+/* ----- ここまでフェードイン ----- */
+
 /* ここからヘッダー */
 
 header {
