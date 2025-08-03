@@ -115,7 +115,7 @@ main .fv {
   margin-bottom: 2%;
 }
 
-main .fv::after {
+/* main .fv::after {
   content: "";
   position: absolute;
   bottom: -120px;
@@ -128,7 +128,7 @@ main .fv::after {
   background-size: cover;
   z-index: 100;
   pointer-events: none;
-}
+} */
 
 main .fv .photo_fv {
   width: 50%;
