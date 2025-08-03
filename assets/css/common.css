@@ -414,6 +414,10 @@ footer {
   text-align: center;
 }
 
+footer .copy small{
+  line-height: 3;
+}
+
 /* ここまでfooter */
 
 /* -------- ここからレスポンシブ -------- */
