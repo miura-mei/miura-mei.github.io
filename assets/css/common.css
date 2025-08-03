@@ -516,7 +516,7 @@ footer .copy small{
   /* アバウト */
 
   main .about {
-    padding-top: 30%;
+    padding-top: 10%;
   }
 
   main .about .profile {
@@ -568,7 +568,7 @@ footer .copy small{
   /* ワークス */
 
   main .works {
-    padding-top: 30%;
+    padding-top: 40%;
   }
 
   main .works h3 {
