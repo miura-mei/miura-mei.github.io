@@ -5,12 +5,17 @@ main {
   font-size: 0.9375rem;
 }
 
+main .works_01 {
+  width: 80%;
+  margin: 0 auto;
+}
+
 main .works_01 h1 {
     font-size: 1.625rem;
-    width: 70%;
+    width: 80%;
+    margin: 0 auto;
     text-align: left;
     border-bottom: 1px solid #141414;
-    margin-left: 5%;
     margin-bottom: 5%;
     font-weight: 400;
     padding-right: 3%;
@@ -28,6 +33,7 @@ main .works_01 h2 {
     margin-bottom: 5%;
     margin-left: 10%;
     font-weight: 400;
+    text-align: left;
 }
 
 main .works_01 .sample {
