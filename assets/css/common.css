@@ -246,9 +246,10 @@ main .section-wrapper::after {
 main .skill h3 {
   text-align: center;
   margin-bottom: 10%;
-  background-color: #efece8;
+  background-color: #d0d2c3;
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
+  color: #ffffff;
   padding: 1% 0;
   letter-spacing: 0.03em;
 }
