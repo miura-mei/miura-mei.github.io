@@ -501,6 +501,10 @@ footer .copy small{
 
   /* ファーストビュー */
 
+  main .fv {
+    background-image: url(../images/fv2sp.png);
+  }
+
   main .fv h1 {
     height: 9vh;
     top: 48%;
@@ -542,6 +546,10 @@ footer .copy small{
 
   main .about .profile .text {
     font-size: 0.75rem;
+  }
+
+  main .section-wrapper::after {
+    background-image: url(../images/kirikaesp.png);
   }
 
   /* スキル */
