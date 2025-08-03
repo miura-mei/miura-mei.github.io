@@ -375,6 +375,10 @@ main .works ul li span {
   font-size: 0.8rem;
 }
 
+main .works .inner li span:first-of-type {
+  margin-bottom: 10%;
+}
+
 main .works ul li img {
   display: block;
   width: 100%;
