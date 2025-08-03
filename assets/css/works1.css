@@ -157,14 +157,49 @@ main .works_01 .banner li img {
   main .works_01 .text {
     width: 80%;
   }
-}
+
 
   @media screen and (max-width:640px) {
     main .works_01 h1 {
-      font-size: 1.125rem;
+      font-size: 1.25rem;
     }
 
     main .works_01 h1 span {
       font-size: 0.875rem;
     }
+
+    main .works_01 .sample img {
+      width: 80%;
+    }
+
+    main .works_01 h2 {
+      margin-left: 3%;
   }
+
+  main .works_01 .url {
+    font-size: 0.75rem;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 15%;    
+  }
+
+  main .works_01 dl {
+    margin: 0 auto;
+    padding-bottom: 15%;
+  }
+  
+  main .works_01 dl dt {
+    margin-bottom: 1%;
+  }
+
+  main .works_01 dl dd {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  main .works_01 .text {
+    width: 90%;
+  }
+
+  }
+}
