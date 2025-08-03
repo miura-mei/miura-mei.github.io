@@ -431,11 +431,10 @@ footer {
 
   main .fv h1 {
     font-size: 2rem;
-    width: 60%;
   }
 
   main .fv .name {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   /* スキル */
@@ -459,9 +458,9 @@ footer {
   }
 
   h2 {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     width: 40%;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .animation,
@@ -499,18 +498,31 @@ footer {
 
   main .fv h1 {
     height: 9vh;
-    top: 65%;
+    top: 48%;
+  }
+
+  main .fv .name {
+    top: 55%;
   }
 
   /* アバウト */
 
+  main .about {
+    padding-top: 30%;
+  }
+
   main .about .profile {
     flex-direction: column;
+    margin-top: 10%;
   }
 
   main .about .profile .guide {
     width: 100%;
     margin-bottom: 5%;
+  }
+
+  main .about .profile .name{
+    font-size: 1.4rem;
   }
 
   main .about .profile .photo {
@@ -521,8 +533,12 @@ footer {
 
   /* スキル */
 
-  main .skill {
+  /* main .skill {
     margin-bottom: 20%;
+  } */
+
+  main .skill h3 {
+    font-size: 0.65rem;
   }
 
   main .skill .box {
@@ -530,6 +546,32 @@ footer {
   }
 
   /* ワークス */
+
+  main .works {
+    padding-top: 30%;
+  }
+
+  main .works h3 {
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+
+  main .works .sns {
+    padding-bottom: 10%;
+  }
+
+  main .works .sns p {
+    font-size: 0.75rem;
+  }
+
+  main .works h4 {
+    width: 50%;
+    padding: 0;
+  }
+
+  main .works .title p {
+    font-size: 0.85rem;
+  }
 
   main .works ul {
     flex-direction: column;
@@ -540,7 +582,7 @@ footer {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
   }
 
   main .works ul li img {
@@ -553,6 +595,9 @@ footer {
     transform: scale(1);
   }
 
+  main .works .brand li {
+    aspect-ratio: 0;
+  }
   
   
 
