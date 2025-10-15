@@ -401,17 +401,18 @@ main .works ul li img {
   transition: transform .4s ease;
 }
 
-main .works .campaign-img {
+main .works .campaign-section img {
   width: 100%;
-  /* max-width: 300px; */
   height: auto;
   object-fit: contain; /* 情報を切らない */
 }
 
+main .works .personal li {
+  width: calc(80% / 2);
+}
 
-main .works .personal {
+main .works .personal img {
   width: 100%;
-  /* max-width: 300px; */
   height: auto;
   object-fit: contain; /* 情報を切らない */
 }
