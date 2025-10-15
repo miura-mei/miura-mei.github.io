@@ -367,7 +367,7 @@ main .works ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 main .works ul li {
