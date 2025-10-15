@@ -177,12 +177,12 @@ main .about {
 main .about .profile {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   margin-bottom: 5%;
 }
 
 main .about .profile .guide {
-  width: 60%;
+  width: 50%;
+  margin-top: 3%;
 }
 
 main .about .profile .name {
