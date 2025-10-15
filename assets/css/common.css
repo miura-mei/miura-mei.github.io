@@ -21,7 +21,7 @@ body {
   color: #141414;
   line-height: 1.8;
   background-color: #ffffff;
-  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  font-family: 'Ubuntu', 'Noto Sans JP', sans-serif;
   letter-spacing: 0.02em;
 }
 
@@ -251,7 +251,7 @@ main .skill h3 {
   text-align: center;
   margin-bottom: 10%;
   background-color: #b7bd99;
-  font-family: "Inter", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   color: #ffffff;
   padding: 1% 0;
