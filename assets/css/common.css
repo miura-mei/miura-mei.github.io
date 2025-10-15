@@ -275,6 +275,8 @@ main .skill .box .illust img{
 
 main .skill .box p {
   font-size: 0.875rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* ここまでスキル */
