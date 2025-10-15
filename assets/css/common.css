@@ -81,9 +81,11 @@ header ul li {
 }
 
 header ul li a {
-  letter-spacing: 0.15em;
+  letter-spacing: 0.05em;
   font-size: 1.125rem;
-  font-family: 'inter', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #1c1c1c;
 }
 
