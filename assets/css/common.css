@@ -585,8 +585,12 @@ footer .copy small{
   }
 
   main .skill .box {
-    margin-bottom: 0;
+    margin-bottom: 5%;
     width: 30%;
+  }
+
+    main .skill .box:first-of-type {
+    margin-left: -1%;
   }
 
   /* ワークス */
