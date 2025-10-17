@@ -574,9 +574,11 @@ footer .copy small{
 
   /* スキル */
 
-  /* main .skill {
-    margin-bottom: 20%;
-  } */
+  main .skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   main .skill h3 {
     font-size: 0.65rem;
@@ -584,6 +586,7 @@ footer .copy small{
 
   main .skill .box {
     margin-bottom: 0;
+    width: 30%;
   }
 
   /* ワークス */
