@@ -484,7 +484,7 @@ footer .copy small{
   h2 {
     margin-bottom: 5%;
     width: 40%;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 
   .animation,
@@ -592,6 +592,10 @@ footer .copy small{
     main .skill .box:first-of-type {
     margin-left: -1%;
   }
+
+    main .section-wrapper {
+    padding-bottom: 15%;
+}
 
   /* ワークス */
 
