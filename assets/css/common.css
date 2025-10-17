@@ -652,6 +652,8 @@ footer .copy small{
     aspect-ratio: 0;
   }
   
-  
+  main .works .personal li {
+    width: auto;
+}
 
 }
