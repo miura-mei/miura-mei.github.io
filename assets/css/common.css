@@ -396,9 +396,14 @@ main .works .inner li span:first-of-type {
 main .works ul li img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1; 
+  height: 100%;
   object-fit: cover;
   transition: transform .4s ease;
+}
+
+main .works .brand li img {
+  height: auto;
+  aspect-ratio: 1 / 1; 
 }
 
 main .works .campaign-section img {
