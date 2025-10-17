@@ -527,12 +527,13 @@ footer .copy small{
   main .fv h1 {
     height: 9vh;
     top: 48%;
+    font-size: 4.5rem;
   }
 
   main .fv .name {
-    top: 55%;
+    top: 58%;
+    font-size: 2.5rem;
   }
-
   /* アバウト */
 
   main .about {
