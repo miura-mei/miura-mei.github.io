@@ -377,9 +377,9 @@ main .works ul li {
   /* overflow: hidden; */
 }
 
-main .works .brand li {
+/* main .works .brand li {
   aspect-ratio: 1 / 1; 
-}
+} */
 
 main .works ul li span {
   display: inline-block;
@@ -396,7 +396,7 @@ main .works .inner li span:first-of-type {
 main .works ul li img {
   display: block;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1; 
   object-fit: cover;
   transition: transform .4s ease;
 }
