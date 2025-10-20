@@ -395,6 +395,7 @@ main .works .personal img {
   width: 100%;
   height: auto;
   object-fit: contain; /* 情報を切らない */
+  box-shadow: none;
 }
 
 main .works ul li img:hover {
