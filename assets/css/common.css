@@ -634,6 +634,7 @@ footer .copy small{
   main .works ul {
     flex-direction: column;
     width: 80%;
+    gap: 0;
   }
 
   main .works ul li {
