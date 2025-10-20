@@ -399,6 +399,7 @@ main .works ul li img {
   height: 100%;
   object-fit: cover;
   transition: transform .4s ease;
+  box-shadow: 2px 2px 4px #9ca08d;
 }
 
 main .works .brand li img {
