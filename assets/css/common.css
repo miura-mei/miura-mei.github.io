@@ -115,21 +115,6 @@ main .fv {
   padding-bottom: 10%;
 }
 
-/* main .fv::after {
-  content: "";
-  position: absolute;
-  bottom: -120px;
-  left: 0;
-  width: 100vw;
-  height: 120px;
-  background-image: url('../images/../images/fv_02.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 100;
-  pointer-events: none;
-} */
-
 main .fv .photo_fv {
   width: 50%;
   margin-right: auto;
@@ -238,7 +223,6 @@ main .section-wrapper::after {
   left: 0;
   width: 100vw;
   height: 120px;
-  /* background-color: red; */
   background-image: url('../images/kirikae.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -260,9 +244,6 @@ main .skill h3 {
 }
 
 main .skill .box {
-  /* width: calc(100% / 6);
-  box-sizing: border-box; */
-  /* margin-bottom: 3%; */
   padding-bottom: 1%;
   background-color: #f8f8f4;
   margin-right: 1%;
@@ -296,7 +277,6 @@ main .skill .box p {
 main .works {
   position: relative;
   width: 100%;
-  /* margin-bottom: 5%; */
   background-color: #f8f8f4;
   padding-top: 10%;
   text-align: center;
@@ -319,9 +299,6 @@ main .works h3::after {
   height: 1.5px;
   background: #000;
   margin-top: 8px;
-    /* position: relative;
-  left: 50%;
-  transform: translateX(-50%); */
 }
 
 main .works .sns {
@@ -350,19 +327,6 @@ main .works .title p {
   font-size: 0.9rem;
 } 
 
-
-/* main .works::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 20%;
-  left: 0;
-  right: 0;
-  background-color: rgb(229, 234, 236);
-  transform: skewY(-3deg);
-  z-index: -1;
-} */
-
 main .works ul {
   display: flex;
   flex-wrap: wrap;
@@ -375,18 +339,11 @@ main .works ul li {
   text-align: center;
   width: calc(90% / 4);
   margin-bottom: 1%;
-  /* overflow: hidden; */
 }
-
-/* main .works .brand li {
-  aspect-ratio: 1 / 1; 
-} */
 
 main .works ul li span {
   display: inline-block;
   color: #191919;
-  /* padding: 2% 5% 1% 5%; */
-  /* margin-bottom: 2%; */
   font-size: 0.8rem;
 }
 
