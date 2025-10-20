@@ -336,6 +336,15 @@ main .works ul {
   padding-bottom: 2%;
 }
 
+main .works ul:nth-of-type(3) {
+  align-items: center;
+  align-items: flex-end;
+}
+
+main .works ul:nth-of-type(3) li {
+  width: calc(90% / 4);
+}
+
 main .works ul li {
   text-align: center;
   width: calc(90% / 5);
@@ -369,6 +378,7 @@ main .works ul li video {
   height: 100%;
   object-fit: contain;
   transition: transform .4s ease;
+  box-shadow: 2px 2px 4px #9ca08d;
 }
 
 main .works .brand li img {
