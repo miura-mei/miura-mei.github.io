@@ -248,6 +248,7 @@ main .skill .box {
   background-color: #f8f8f4;
   margin-right: 1%;
   box-shadow: 2px 2px 4px #dadada;
+  border-radius: 6px;
 }
 
 main .skill .box:first-of-type {
