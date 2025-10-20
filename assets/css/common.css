@@ -331,15 +331,18 @@ main .works ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
+  gap: 20px;
   padding-bottom: 2%;
 }
 
 main .works ul li {
   text-align: center;
-  width: calc(90% / 4);
+  width: calc(90% / 5);
   margin-bottom: 1%;
+  /* overflow: hidden; */
 }
+
 
 main .works ul li span {
   display: inline-block;
@@ -360,15 +363,28 @@ main .works ul li img {
   box-shadow: 2px 2px 4px #9ca08d;
 }
 
+main .works ul li video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform .4s ease;
+}
+
 main .works .brand li img {
   height: auto;
-  aspect-ratio: 1 / 1; 
+  /* aspect-ratio: 1 / 1;  */
 }
 
 main .works .campaign-section img {
   width: 100%;
   height: auto;
   object-fit: contain; /* 情報を切らない */
+}
+
+main .works ul li .mock {
+  box-shadow: none;
+  aspect-ratio: auto; 
 }
 
 main .works .personal li {
