@@ -624,11 +624,14 @@ footer .copy small{
   }
 
   main .works ul li {
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
   }
+
+    main .works ul:nth-of-type(3) li {
+    width: 80%;
+}
 
   main .works ul li img {
     transition: none;
