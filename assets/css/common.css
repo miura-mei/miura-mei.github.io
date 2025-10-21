@@ -641,6 +641,12 @@ footer .copy small{
     transform: scale(1);
   }
 
+  main .works .campaign-section li:first-of-type {
+    width: 50%;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
   main .works .brand li {
     aspect-ratio: 0;
   }
