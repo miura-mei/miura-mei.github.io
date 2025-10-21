@@ -156,7 +156,6 @@ main .fv .name {
   font-style: normal;
 }
 
-
 /* ここまでファーストビュー */
 
 /* ここからabout */
@@ -282,7 +281,6 @@ main .works {
   padding-top: 10%;
   text-align: center;
 }
-
 
 main .works h3 {
   display: inline-block;
@@ -584,7 +582,6 @@ footer .copy small{
     margin-left: -1%;
   }
 
-
   /* ワークス */
 
   main .works {
@@ -624,13 +621,14 @@ footer .copy small{
   }
 
   main .works ul li {
+    width: calc(90% / 2);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
   }
 
-    main .works ul:nth-of-type(3) li {
-    width: 80%;
+  main .works ul:nth-of-type(3) li {
+    width: calc(90% / 2);
 }
 
   main .works ul li img {
