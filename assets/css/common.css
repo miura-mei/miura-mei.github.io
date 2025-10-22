@@ -389,22 +389,22 @@ main .works .explanation {
 
 main .works .explanation .mockup {
   width: 50%;
-  margin-right: 10%;
+  margin-right: 15%;
 }
 
 main .works .explanation .mockup img {
-  width: 70%;
+  width: 60%;
 }
 
 main .works .explanation .mockup video {
-  width: 70%;
+  width: 60%;
 }
 
 main .works .title {
   text-align: center;
   margin-bottom: 2%;
   width: 50%;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 main .works .title p {
@@ -415,7 +415,7 @@ main .works .title p {
 
 main .works .title .text {
   letter-spacing: 0.03em;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 } 
 
 main .works ul {
