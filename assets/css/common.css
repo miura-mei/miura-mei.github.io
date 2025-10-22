@@ -477,11 +477,11 @@ main .works .cam ul li img {
   object-fit: contain; /* 情報を切らない */
 }
 
-main .works .cam ul::after {
+main .works .cam::after {
   content: "";
   position: absolute;
-  bottom: -120px;
-  left: auto;
+  bottom: auto;
+  left: 0;
   width: 100vw;
   height: 130px;
   background-image: url('../images/kirikae2.png');
@@ -506,12 +506,12 @@ main .works .fd {
   padding-top: 13%;
 }
 
-main .works .fd ul::after {
+main .works .fd::after {
   content: "";
   position: absolute;
-  bottom: -120px;
   width: 100vw;
   height: 130px;
+  left: 0;
   background-image: url('../images/kirikae.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -528,11 +528,10 @@ main .works .video ul {
   padding-bottom: 0%;
 }
 
-main .works .video ul::after {
+main .works .video::after {
   content: "";
   position: absolute;
-  bottom: -120px;
-  /* left: auto; */
+  left: 0;
   width: 100vw;
   height: 130px;
   background-image: url('../images/kirikae2.png');
