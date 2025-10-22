@@ -782,20 +782,24 @@ footer .copy small{
     padding-bottom: 5%;
   }
 
-  main .works .cam ul::after  {
+  main .works .cam::after  {
     background-image: url(../images/kirikaesp2.png);
+    height: 100px;
   }
 
-  main .works .fd ul::after {
+  main .works .fd::after {
     background-image: url(../images/kirikaesp.png);
+    height: 100px; 
   }
 
-  main .works .video ul::after {
+  main .works .video::after {
     background-image: url(../images/kirikaesp2.png);
+    height: 100px; 
   }
 
   main .works ul {
     gap: 0;
+    padding-bottom: 0;
   }
 
   main .works ul li {
@@ -815,15 +819,15 @@ footer .copy small{
   }
 
   main .works .fd {
-    padding-top: 30%;
+    padding-top: 35%;
   }
 
   main .works .video {
-    padding-top: 30%;
+    padding-top: 35%;
   }
 
   main .works .site {
-    padding-top: 30%;    
+    padding-top: 35%;    
   }
 
   main .works .brand li {
