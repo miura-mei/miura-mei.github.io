@@ -548,7 +548,7 @@ main .works .site {
 }
 
 main .works .personal li {
-  width: calc(70% / 2);
+  width: calc(80% / 2);
 }
 
 main .works .personal img {
