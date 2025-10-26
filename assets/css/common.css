@@ -547,6 +547,10 @@ main .works .site {
     padding-top: 13%;
 }
 
+main .works .site .ec {
+  margin-top: 13%;
+}
+
 main .works .personal li {
   width: calc(80% / 2);
 }
